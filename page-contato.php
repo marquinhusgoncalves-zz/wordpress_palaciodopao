@@ -1,53 +1,141 @@
 <?php
-get_header();
-?>
 
-<div class="row container">
+  //response generation function
 
-	<div class="encomenda-box-title" style="background: #789 url(<?php bloginfo('stylesheet_directory');?>/img/marcadagua.png);">
-		<h1 class="encomenda-title">ENTRE EM CONTATO COM A GENTE</h1>
+  $response = "";
+
+  //function to generate response
+  function my_contact_form_generate_response($type, $message){
+
+    global $response;
+
+    if($type == "success") $response = "<div class='success'>{$message}</div>";
+    else $response = "<div class='button'>{$message}</div>";
+  }
+
+  //Placeholder
+  $ph_name = "NOME";
+  $ph_email = "E-MAIL";
+  $ph_message = "MENSAGEM";
+  $ph_human = "";
+
+  //response messages
+  $not_human       = "Verificação humana incorreta.";
+  $missing_content = "Por favor coloque todas as informações.";
+  $email_invalid   = "Email inválido.";
+  $message_unsent  = "Mensagem não enviada. Tente de novo.";
+  $message_sent    = "Obrigado! Sua mensagem foi enviada.";
+
+  //user posted variables
+  $name = $_POST['message_name'];
+  $email = $_POST['message_email'];
+  $message = $_POST['message_text'];
+  $human = $_POST['message_human'];
+  $machine = $_POST['message_machine'];
+
+  //php mailer variables
+  $to = get_option('admin_email');
+  $subject = "Email enviado do site da ".get_bloginfo('name');
+  $headers = 'From: '. $email . "\r\n" .
+    'Reply-To: ' . $email . "\r\n";
+
+  if(!$human == 0){
+    if($human != $machine) my_contact_form_generate_response("error", $not_human); //not human!
+    else {
+
+      //validate email
+      if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+        my_contact_form_generate_response("error", $email_invalid);
+      else //email is valid
+      {
+        //validate presence of name and message
+        if(empty($name) || empty($message)){
+          my_contact_form_generate_response("error", $missing_content);
+        }
+        else //ready to go!
+        {
+          $sent = wp_mail($to, $subject, strip_tags($message), $headers);
+          if($sent) my_contact_form_generate_response("success", $message_sent); //message sent!
+          else my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
+        }
+      }
+    }
+  }
+  else if ($_POST['submitted']) my_contact_form_generate_response("error", $missing_content);
+
+get_header(); ?>
+
+  <script type="text/javascript">
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(-23.646776, -46.514396,17);
+        var mapOptions = {
+            zoom: 17,
+            center: myLatlng,
+            disableDefaultUI: false,
+            scrollwheel: false,
+            draggable: false
+        }
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Palácio do Pão'
+        });
+        var styles = [
+            {
+                stylers: [
+                    { hue: "#23408F" },
+                    { saturation: -20 }
+                ]
+            },{
+                featureType: "road",
+                elementType: "geometry",
+                stylers: [
+                    { lightness: 100 },
+                    { visibility: "simplified" }
+                ]
+            },{
+                featureType: "road.local",
+                elementType: "labels",
+            }
+        ];
+        map.setOptions({styles: styles});
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+	<div class = "produto-box-title" style = "background: #789 url(<?php bloginfo('stylesheet_directory');?>/img/marcadagua.png);">
+		<h1 class = "produto-title">ENTRE EM CONTATO COM A GENTE</h1>
 	</div>
 
-	<div class="clearfix" style="background-color: #EFEEEA; margin-top: -1px">
+	<div class = "clearfix" style = "background-color: #EFEEEA; margin-top: -1px">
 
-	  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding: 3%; color: #6B6B6B; font-weight: 300">
-		<form role="form">
-		    <div class="form-group">
-		      <label for="InputName">Qual o seu nome?</label>
-		      <input type="text" class="form-control" id="InputName" placeholder="Coloque seu nome aqui">
-		    </div>
-		    
-		    <div class="form-group">
-		      <label for="InputContactEmail">Seu e-mail?</label>
-		      <input type="email" class="form-control" id="InputContactEmail" placeholder="Coloque seu email">
-		    </div>
-		    
-		    <div class="form-group">
-		      <label for="InputMsg">Sua mensagem</label>
-		      <textarea class="form-control" rows="3" id="InputMsg" placeholder="Escreva para nós"></textarea>
-		    </div>
+		<div class = "col-lg-6 col-md-6 col-sm-12 col-xs-12" style = "padding: 4% 3% 3%; color: #6B6B6B; font-weight: 300" id = "respond">
 		
-		    <button type="submit" class="btn btn-default" style="display: block; margin-bottom: 25px">Enviar</button>
+		  <form action = "<?php the_permalink(); ?>" method = "post">
+		    <input class = "col-xs-12" type = "text" name = "message_name" value = "<?php echo esc_attr($_POST['message_name']); ?>" placeholder = "<?php echo $ph_name; ?>" />
+		    <input class = "col-xs-12" type = "text" name = "message_email" value = "<?php echo esc_attr($_POST['message_email']); ?>" placeholder = "<?php echo $ph_email; ?>" />
+		    <textarea class = "col-xs-12" type="text" name = "message_text" rows = "2" placeholder = "<?php echo $ph_message; ?>"><?php echo esc_textarea($_POST['message_text']); ?></textarea>
+		    <p style = "padding-left: 0; display: inline-block">DIGITE O NÚMERO <strong><?php $Random_code=rand(10,100); echo$Random_code; ?></strong> PARA ENVIAR</p>
+        <label style = "padding-left: 20px"><input type = "text" style = "width: 20px" name="message_human" placeholder = "<?php echo $ph_human; ?>" /></label>
+        <input type = "hidden" name = "message_machine" value = "<?php echo $Random_code; ?>" />
+		    <input type = "hidden" name = "submitted" value = "1">
+		    
+        <button class = "btn btn-default" type = "submit" name = "send" style = "float: right">ENVIAR</button>
+		  </form>
 
-		    <a style="font-size: 1.5em; font-weight: 400; line-height: 1.4; color: #6B6B6B !important" href="mailto:contato@palaciodopao.com.br">Ou clique aqui e envie um e-mail</a>
-		</form>
-	  </div>
-	 
-	  <div class="box-pagamento col-lg-6 col-md-6 col-sm-12 col-xs-12" role="form">
-		<div style="display: table-cell; vertical-align: middle">
-			<img class="pagamento" src="<?php bloginfo('stylesheet_directory');?>/img/pagamento.png">			
+      <div style = "padding: 10px 0"><?php echo $response; ?></div>
+
+		  <a class = "clearfix" style = "font-size: 1.2em; font-weight: 800; line-height: 1.4; color: #6B6B6B !important" href = "mailto:contato@palaciodopao.com.br">Ou clique aqui e envie um e-mail</a>
 
 		</div>
+	 
+	  <div class = "box-pagamento col-lg-6 col-md-6 col-sm-12 col-xs-12" role = "form">
+  		<div style = "display: table-cell; vertical-align: middle"><img class = "pagamento" src = "<?php bloginfo('stylesheet_directory');?>/img/pagamento.png"></div>
 	  </div>
 
 	</div>
 
-	<div id="map-canvas"></div>
+	<div id = "map-canvas"></div>
 
-
-</div>
-
-<?php
-get_footer();
-
-?>
+<?php get_footer(); ?>

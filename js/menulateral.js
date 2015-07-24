@@ -14,5 +14,4 @@ jQuery(document).ready(function(){
 	$("#menu-menu-produtos").addClass( 'clearfix' );
 	$("#menu-menu-produtos li").addClass( 'col-lg-3 col-md-3 col-sm-6 col-xs-6' );
 
-
 });

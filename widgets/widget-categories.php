@@ -1,9 +1,7 @@
 <?php
 
-/**
- * Custom Categories Widget
- * palaciodopao Theme
- */
+/* palaciodopao Theme */
+
 class pp_categories extends WP_Widget
 {
 	 function pp_categories(){
@@ -27,12 +25,9 @@ class pp_categories extends WP_Widget
       echo $title;
       echo $after_title;
 
-		/**
-		 * Widget Content
-		 */
+		/* Widget Content */
 
 		?>
-
 
     <div class="cats-widget">
 
@@ -71,12 +66,10 @@ class pp_categories extends WP_Widget
 		echo $after_widget;
     }
 
-
     function form($instance) {
       if(!isset($instance['title'])) $instance['title'] = __('Categories' , 'pp');
       if(!isset($instance['limit'])) $instance['limit'] = 4;
       if(!isset($instance['enable_count'])) $instance['enable_count'] = '';
-
 
     	?>
 

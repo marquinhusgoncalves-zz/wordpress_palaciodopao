@@ -22,9 +22,6 @@ class pp_popular_posts extends WP_Widget
       echo $title;
       echo $after_title;
 
-		/**
-		 * Widget Content
-		 */
     ?>
 
     <!-- popular posts -->
@@ -41,9 +38,8 @@ class pp_popular_posts extends WP_Widget
 
                   $featured_query = new WP_Query($featured_args);
 
-                  /**
-                   * Check if zilla likes plugin exists
-                   */
+                  // Check if zilla likes plugin exists
+
                   if($featured_query->have_posts()) : while($featured_query->have_posts()) : $featured_query->the_post();
 
                     ?>

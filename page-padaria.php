@@ -1,70 +1,62 @@
-<?php
-get_header();
-?>
+<?php get_header(); ?>
+
+<script type="text/javascript">
+	$(document).ready(function() {  
+	var stickyNavTop = $('#stickyribbon').offset().top;
+	var stickyNav = function(){  
+		var scrollTop = $(window).scrollTop();  
+		if (scrollTop > stickyNavTop) {   
+			$('#stickyribbon').addClass('fixed', 'container');  
+			} else {
+				$('#stickyribbon').removeClass('fixed', 'container');   
+			}
+		};
+		stickyNav();
+		$(window).scroll(function() {  
+			stickyNav();  
+		});
+	});
+</script>
 
 <div>
-<div>
-  <nav class="row container" id="stickyribbon">
-    <ul class="menu-padaria">
-      <li role="presentation" style="background: #FD9332"><a href="#historia">HISTÓRIA</a></li>
-      <li role="presentation" style="background: #FD9332"><a href="#sustentabilidade">SUSTENTABILIDADE</a></li>
-      <li role="presentation" style="background: #FD9332"><a href="#acaosocial">AÇÃO SOCIAL</a></li>
-      <li role="presentation" style="background: #FD9332"><a href="#premios">PRÊMIOS</a></li>
-    </ul>
-  </nav>
-</div>
-</div>
 
-<div class="row container">
-  <?php 
-    echo do_shortcode("[metaslider id=63]"); 
-  ?>
-</div>
+	<div class = "container wrap hidden-xs hidden-sm" id = "stickyribbon">
+		<ul class = "menu-padaria">
+			<li role = "presentation"><a href = "#historia">HISTÓRIA</a></li>
+			<li role = "presentation"><a href = "#sustentabilidade">SUSTENTABILIDADE</a></li>
+	   <!-- <li role = "presentation"><a href = "#acaosocial">AÇÃO SOCIAL</a></li> -->
+			<li role = "presentation"><a href = "#premios">PRÊMIOS</a></li>
+		</ul>
+	</div>
 
+	<div class = "hidden-xs hidden-sm"><?php include("menuspace.php") ?></div>
+	
+	<?php //echo do_shortcode("[metaslider id=63]"); ?>
 
-<!-- HISTÓRIA -->
-<div class="row container">
-	<a id="anchor-name" name="historia"></a>
+	<!-- HISTÓRIA -->
+	<section>
+		<a id = "anchor-name" name = "historia"></a>
+		<?php include("historia.php"); ?>
+	</section>
 
-		<?php
-			include("page-historia.php");
-		?>
+	<!-- SUSTENTABILIDADE -->
+	<section>
+		<a id = "anchor-name" name = "sustentabilidade"></a>
+		<?php include("sustentabilidade.php"); ?>
+	</section>
 
-    </div>
+	<!-- AÇÃO SOCIAL -->
+	<!-- <section>
+		<a id = "anchor-name" name = "acaosocial"></a>
+		<?php //include("page-acaosocial.php"); ?>
+	</section> -->
 
-
-<!-- SUSTENTABILIDADE -->
-<div class="row container">
-	<a id="anchor-name" name="sustentabilidade"></a>
-
-		<?php
-			include("page-sustentabilidade.php");
-		?>
-
-</div>
-
-
-<!-- AÇÃO SOCIAL -->
-<div class="row container">
-	<a id="anchor-name" name="acaosocial"></a>
-
-		<?php
-			include("page-acaosocial.php");
-		?>
+	<!-- PRÊMIOS -->
+	<section>
+		<a id = "anchor-name" name = "premios"></a>
+		<?php include("premios.php"); ?>
+	</section>
 
 </div>
 
-
-<!-- PRÊMIOS -->
-<div class="row container">
-	<a id="anchor-name" name="premios"></a>
-
-		<?php
-			include("page-premios.php");
-		?>
-
-</div>
-
-<?php
-get_footer();
-?>
+<?php get_footer(); ?>

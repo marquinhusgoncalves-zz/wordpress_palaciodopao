@@ -21,20 +21,14 @@ class pp_social_widget extends WP_Widget
       echo $title;
       echo $after_title;
 
-		/**
-		 * Widget Content
-		 */
     ?>
 
     <!-- social icons -->
     <div class="social-icons sticky-sidebar-social">
 
-
     <?php pp_social(); ?>
 
-
     </div><!-- end social icons -->
-
 
 		<?php
 
