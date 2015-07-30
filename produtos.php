@@ -2,7 +2,7 @@
 	<a href = "../palaciodopao/produtos/">
 	  <div style = "width: 250px; margin: 0 auto">
 	  	<div id = "produtos-frase">
-	  	  <p>CONHEÇA<br>NOSSOS<br>PRODUTOS</p>
+	  	  <p>conheça<br>nossos<br>produtos</p>
 	  	</div>
 	  </div>
 	</a>

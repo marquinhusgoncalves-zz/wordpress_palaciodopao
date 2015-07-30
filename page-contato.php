@@ -14,9 +14,9 @@
   }
 
   //Placeholder
-  $ph_name = "NOME";
-  $ph_email = "E-MAIL";
-  $ph_message = "MENSAGEM";
+  $ph_name = "Nome";
+  $ph_email = "e-maill";
+  $ph_message = "Mensagem";
   $ph_human = "";
 
   //response messages
@@ -65,6 +65,42 @@
 
 get_header(); ?>
 
+	<div class = "produto-box-title" style = "background: #789 url(<?php bloginfo('stylesheet_directory');?>/img/marcadagua.png);">
+		<h1 class = "produto-title">entre em contato com a gente</h1>
+	</div>
+
+	<div class = "clearfix" style = "background-color: #EFEEEA; margin-top: -1px">
+
+		<div class = "col-xs-12 col-md-6" style = "padding: 4% 3% 3%; color: #6B6B6B; font-weight: 300" id = "respond">
+		
+		  <form action = "<?php the_permalink(); ?>" method = "post">
+		    <input class = "col-xs-12" type = "text" name = "message_name" value = "<?php echo esc_attr($_POST['message_name']); ?>" placeholder = "<?php echo $ph_name; ?>" />
+		    <input class = "col-xs-12" type = "text" name = "message_email" value = "<?php echo esc_attr($_POST['message_email']); ?>" placeholder = "<?php echo $ph_email; ?>" />
+		    <textarea class = "col-xs-12" type="text" name = "message_text" rows = "2" placeholder = "<?php echo $ph_message; ?>"><?php echo esc_textarea($_POST['message_text']); ?></textarea>
+		    <p style = "padding-left: 0; display: inline-block">digite o número <strong><?php $Random_code=rand(10,100); echo$Random_code; ?></strong> para enviar</p>
+        <label style = "padding-left: 20px"><input type = "text" style = "width: 20px" name="message_human" placeholder = "<?php echo $ph_human; ?>" /></label>
+        <input type = "hidden" name = "message_machine" value = "<?php echo $Random_code; ?>" />
+		    <input type = "hidden" name = "submitted" value = "1">
+		    
+        <button class = "btn btn-default" type = "submit" name = "send" style = "float: right">enviar</button>
+		  </form>
+
+      <div style = "padding: 10px 0"><?php echo $response; ?></div>
+
+		  <a class = "clearfix" style = "font-size: 1.2em; font-weight: 800; line-height: 1.4; color: #6B6B6B !important" href = "mailto:contato@palaciodopao.com.br">Ou clique aqui e envie um e-mail</a>
+
+		</div>
+	 
+	  <div class = "box-pagamento col-xs-12 col-md-6" role = "form">
+  		<div style = "display: table-cell; vertical-align: middle"><img class = "pagamento" src = "<?php bloginfo('stylesheet_directory');?>/img/pagamento.png"></div>
+	  </div>
+
+	</div>
+
+	<div id = "map-canvas"></div>
+
+  <script src = "https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
   <script type="text/javascript">
     function initialize() {
         var myLatlng = new google.maps.LatLng(-23.646776, -46.514396,17);
@@ -103,39 +139,5 @@ get_header(); ?>
     }
     google.maps.event.addDomListener(window, 'load', initialize);
   </script>
-
-	<div class = "produto-box-title" style = "background: #789 url(<?php bloginfo('stylesheet_directory');?>/img/marcadagua.png);">
-		<h1 class = "produto-title">ENTRE EM CONTATO COM A GENTE</h1>
-	</div>
-
-	<div class = "clearfix" style = "background-color: #EFEEEA; margin-top: -1px">
-
-		<div class = "col-lg-6 col-md-6 col-sm-12 col-xs-12" style = "padding: 4% 3% 3%; color: #6B6B6B; font-weight: 300" id = "respond">
-		
-		  <form action = "<?php the_permalink(); ?>" method = "post">
-		    <input class = "col-xs-12" type = "text" name = "message_name" value = "<?php echo esc_attr($_POST['message_name']); ?>" placeholder = "<?php echo $ph_name; ?>" />
-		    <input class = "col-xs-12" type = "text" name = "message_email" value = "<?php echo esc_attr($_POST['message_email']); ?>" placeholder = "<?php echo $ph_email; ?>" />
-		    <textarea class = "col-xs-12" type="text" name = "message_text" rows = "2" placeholder = "<?php echo $ph_message; ?>"><?php echo esc_textarea($_POST['message_text']); ?></textarea>
-		    <p style = "padding-left: 0; display: inline-block">DIGITE O NÚMERO <strong><?php $Random_code=rand(10,100); echo$Random_code; ?></strong> PARA ENVIAR</p>
-        <label style = "padding-left: 20px"><input type = "text" style = "width: 20px" name="message_human" placeholder = "<?php echo $ph_human; ?>" /></label>
-        <input type = "hidden" name = "message_machine" value = "<?php echo $Random_code; ?>" />
-		    <input type = "hidden" name = "submitted" value = "1">
-		    
-        <button class = "btn btn-default" type = "submit" name = "send" style = "float: right">ENVIAR</button>
-		  </form>
-
-      <div style = "padding: 10px 0"><?php echo $response; ?></div>
-
-		  <a class = "clearfix" style = "font-size: 1.2em; font-weight: 800; line-height: 1.4; color: #6B6B6B !important" href = "mailto:contato@palaciodopao.com.br">Ou clique aqui e envie um e-mail</a>
-
-		</div>
-	 
-	  <div class = "box-pagamento col-lg-6 col-md-6 col-sm-12 col-xs-12" role = "form">
-  		<div style = "display: table-cell; vertical-align: middle"><img class = "pagamento" src = "<?php bloginfo('stylesheet_directory');?>/img/pagamento.png"></div>
-	  </div>
-
-	</div>
-
-	<div id = "map-canvas"></div>
 
 <?php get_footer(); ?>

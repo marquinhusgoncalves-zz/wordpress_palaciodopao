@@ -7,7 +7,7 @@
 
 <div class = "bg-cardapio">
 	<div class = "clearfix produto cardapio">
-		<div class = "col-lg-6 col-lg-offset-3"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_copa/06.jpg" alt = "" /></div>
+		<div class = "col-lg-6 col-lg-offset-3"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_copa/06.jpg" alt = "pratos rápidos" /></div>
 	</div>
 </div>
 

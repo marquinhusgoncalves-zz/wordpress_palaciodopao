@@ -1,7 +1,7 @@
-  <footer class = "site-footer">
-  
+	<footer class = "site-footer">
+
 	<div style = "width: 100%; height: 200px; display: table">	
-	  <div class = "socialbar">
+		<div class = "socialbar">
 
 		<div class = "adress hidden-xs col-sm-8 col-md-9">
 			<p>Av. Itamarati, 1001 - Pq. Jaçatuba - Santo André - SP <br />
@@ -18,7 +18,7 @@
 		</div>
 
 		<div class = "col-xs-12 col-sm-4 col-md-3" style = "padding: 20px 4%; font-size: 1.2em">
-			<p>SIGA-NOS</p>
+			<p>Siga-nos</p>
 
 			<div class = "social-icon" style = "background: #6678C5">
 				<a href = "https://www.facebook.com/palaciodopao" target = "_blank">
@@ -38,17 +38,36 @@
 				</a>
 			</div>
 		</div>
-	  </div>  	
+		</div>  	
 	</div>
 	
 	<div class = "info"><p style = "color: white"><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?></p></div>
 
 	<div class="scroll-to-top"><i class="glyphicon glyphicon-chevron-up"></i></div><!-- .scroll-to-top -->
-  
-  </footer>
+
+	</footer>
 		
 </div><!-- container -->
 
 <?php wp_footer(); ?>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src = "<?php bloginfo('stylesheet_directory');?>//js/smooth-scroll.min.js"></script>
+
+<script>
+	$(".toggle i").click(function() {
+		 var $this = $(this);
+		 if ($this.hasClass("fa-bars")) {
+				$this.removeClass("fa-bars").addClass("fa-times");
+				return;
+		 }
+		 if ($this.hasClass("fa-times")) {
+				$this.removeClass("fa-times").addClass("fa-bars");
+				return;
+		 }
+	});
+</script>
+
 </body>
 </html>

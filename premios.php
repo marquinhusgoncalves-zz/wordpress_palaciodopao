@@ -1,7 +1,7 @@
 <!-- PRÊMIOS -->
 
   <div class="clearfix" style="background: #E4E0D4">
-		<h1 class="titulo">PRÊMIOS</h1>
+		<h1 class="titulo">prêmios</h1>
 
 	<div class="clearfix" style="background: #EDEAE2">
 	  <div class="premios col-xs-12 col-sm-6 col-md-4 col-lg-3">

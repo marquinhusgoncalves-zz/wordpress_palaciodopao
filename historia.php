@@ -1,5 +1,5 @@
 <!-- HISTÓRIA -->
-<h1 class = "titulo" style = "background: #BDBBBB; color: white">NOSSA HISTORIA</h1>
+<h1 class = "titulo" style = "background: #BDBBBB; color: white">nossa história</h1>
 
 <div class = "clearfix" style = "background: #F2F2F2; padding: 3%">
 	<p style = "padding: 15px">Fundada em 1976 e com a atual administração desde 1986, nós da Palácio do Pão nos dedicamos em oferecer produtos e serviços com excelência e qualidade.</br>

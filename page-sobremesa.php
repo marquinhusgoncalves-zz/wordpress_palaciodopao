@@ -7,7 +7,7 @@
 
 <div class = "bg-cardapio">
 	<div class = "clearfix produto cardapio">
-		<div class = "panzoom-elements col-lg-6 col-lg-offset-3"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_copa/14.jpg" alt = "bebidas" /></div>
+		<div class = "col-lg-6 col-lg-offset-3"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_copa/12.jpg" alt = "sobremesas" /></div>
 	</div>
 </div>
 

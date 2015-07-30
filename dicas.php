@@ -6,7 +6,7 @@
 get_header(); ?>
 
 <div class = "produto-box-title" style = "background: #789 url(<?php bloginfo('stylesheet_directory');?>/img/marcadagua.png);">
-	<h1 class = "produto-title">CONFIRA NOSSAS DICAS</h1>
+	<h1 class = "produto-title">confira nossas dicas</h1>
 </div>
 
 <div id = "content">

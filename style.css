@@ -64,6 +64,9 @@ li {
 	color: #6B6B6B;
 	font-size: 16px;
 }
+form {
+	text-transform: uppercase;
+}
 /* /////////////// MENU /////////////// */
 .bg-menu {
 	background-color: #261b16;
@@ -154,6 +157,7 @@ nav a:visited {
 	text-decoration: none;
 	text-align: center;
 	font-weight: 600;
+	text-transform: uppercase;
 }
 .menu-padaria li a:hover {
 	color: white;
@@ -446,6 +450,7 @@ div.text-column {
 }
 h1.titulo {
 	font-size: 3.1em !important;
+	text-transform: uppercase;
 	padding: 4%;
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
@@ -481,6 +486,7 @@ h1.titulo {
 	height: 250px;
 	border-radius: 50%;
 	z-index: 1;
+	text-transform: uppercase;
 }
 #produtos-frase p {
 	display: table-cell;
@@ -566,6 +572,7 @@ h1.titulo {
 .botao a {
 	font-weight: 800;
 	color: #6B6B6B;
+	text-transform: uppercase;
 }
 .botao a:hover {
 	color: #131313;
@@ -746,6 +753,7 @@ h1.titulo {
 	height: 200px;
 	font-size: 20px;
 	text-decoration: none;
+	text-transform: uppercase;
 	color: white;
 	font-weight: 400;
 	padding: 5px;
@@ -775,6 +783,7 @@ h1.titulo {
 }
 .produto-title {
 	font-weight: 100;
+	text-transform: uppercase;
 	display: table-cell;
 	vertical-align: middle;
 	padding: 20px 0
@@ -913,4 +922,14 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 .flex-viewport {
 	width: 100%;
+}
+.carousel-indicators {
+    bottom: 0;
+}
+.carousel-indicators li {
+	width: 40px;
+	height: 10px;
+	background-color: #000\9;
+	background-color: rgba(0,0,0,0);
+	border: 3px solid #fff;
 }

@@ -5,7 +5,6 @@ function palaciodopao_resources() {
 	wp_enqueue_style( 'icons', get_template_directory_uri() . '/css/font-awesome.min.css' );
 	wp_enqueue_script( 'custom-script' );
   wp_enqueue_script( 'pp-functions', get_template_directory_uri() . '/js/functions.min.js', array('jquery') );
-	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll.js', array( 'jquery' ), '',  true );
   wp_enqueue_script( 'menulateral', get_template_directory_uri() . '/js/menulateral.js', array( 'jquery' ), '',  true );
 }
 add_action('wp_enqueue_scripts', 'palaciodopao_resources');
