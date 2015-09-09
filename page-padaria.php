@@ -36,7 +36,6 @@
 
 <?php get_footer(); ?>
 
-
 <script>
 	$(document).ready(function() {
 			var stickyNavTop = $('#stickyribbon').offset().top;

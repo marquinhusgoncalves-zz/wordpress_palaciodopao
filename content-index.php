@@ -4,7 +4,7 @@
  */
 ?>
 
-<div class = "post col-sm-6">
+<div class = "post col-sm-6" style = "z-index: 1">
 
 	<article id = "post-<?php the_ID(); ?>">
 		<div class = "blog-item-wrap">

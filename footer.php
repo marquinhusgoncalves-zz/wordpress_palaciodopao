@@ -43,17 +43,21 @@
 	
 	<div class = "info"><p style = "color: white"><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?></p></div>
 
-	<div class="scroll-to-top"><i class="glyphicon glyphicon-chevron-up"></i></div><!-- .scroll-to-top -->
-
 	</footer>
 		
 </div><!-- container -->
 
+
+<div class = "scroll-to-top"><i class = "fa fa-chevron-up"></i></div><!-- .scroll-to-top -->
+
 <?php wp_footer(); ?>
+
+</body>
 
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src = "<?php bloginfo('stylesheet_directory');?>//js/smooth-scroll.min.js"></script>
+<script src = "<?php bloginfo('stylesheet_directory');?>//js/menulateral.min.js"></script>
 
 <script>
 	$(".toggle i").click(function() {
@@ -69,5 +73,28 @@
 	});
 </script>
 
-</body>
+<script>
+	$(function(){
+	 
+		$(document).on( 'scroll', function(){
+	 
+			if ($(window).scrollTop() > 100) {
+				$('.scroll-to-top').addClass('show');
+			} else {
+				$('.scroll-to-top').removeClass('show');
+			}
+		});
+	 
+		$('.scroll-to-top').on('click', scrollToTop);
+	});
+
+	function scrollToTop() {
+		verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+		element = $('body');
+		offset = element.offset();
+		offsetTop = offset.top;
+		$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+	}
+</script>
+
 </html>

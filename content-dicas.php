@@ -18,7 +18,7 @@
 				
 			<!-- BLOG BOX 2 -->
 			<div class = "blog-box-02">
-				<header class = "entry-header page-header" style = "margin: 0 !important">
+				<header class = "entry-header page-header" style = "margin: 0 !important; z-index: 10">
 		  			<?php if ( 'post' == get_post_type() ) : ?>
 					<div class = "entry-meta">  
 						<h1 class = "entry-title" style = "margin: 10px 0 !important;">

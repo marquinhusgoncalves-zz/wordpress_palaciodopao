@@ -7,11 +7,11 @@
 
 <div class = "bg-cardapio">
 	<div class = "clearfix produto cardapio">
-    <div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_encomendas/06.jpg" alt = "bolos" /></div>
-    <div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_encomendas/07.jpg" alt = "bolos" /></div>
-    <div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_encomendas/08.jpg" alt = "bolos" /></div>
-    <div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_encomendas/09.jpg" alt = "bolos" /></div>
-  </div>
+		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_encomendas/06.jpg" alt = "bolos" /></div>
+		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_encomendas/07.jpg" alt = "bolos" /></div>
+		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_encomendas/08.jpg" alt = "bolos" /></div>
+		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_encomendas/09.jpg" alt = "bolos" /></div>
+	</div>
 </div>
 
 <?php get_footer(); ?>

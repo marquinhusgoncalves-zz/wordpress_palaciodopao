@@ -6,7 +6,6 @@
 		<li data-target = "#carousel-index" data-slide-to = "0" class = "active"></li>
 		<li data-target = "#carousel-index" data-slide-to = "1"></li>
 		<li data-target = "#carousel-index" data-slide-to = "2"></li>
-		<li data-target = "#carousel-index" data-slide-to = "3"></li>
 	  </ol>
 
 	  <!-- Wrapper for slides -->
@@ -20,11 +19,7 @@
 		</div>
 
 		<div class = "item">
-		  <img src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/03.jpg" alt = "Pastel de Belém">
-		</div>
-
-		<div class = "item">
-		  <img src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/04.jpg" alt = "Pizzas">
+		  <a href = "../palaciodopao/pizzas/"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/pizza.jpg" alt = "Pizzas"></a>
 		</div>
 
 	  </div>

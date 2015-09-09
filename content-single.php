@@ -35,7 +35,7 @@
 		</div><!-- .entry-content -->
 
 		<footer class = "entry-meta" style = "margin-top: 20px; text-align: justify; padding: 0 20px">
-	    	<?php if(has_tag()) : ?>
+	      <?php if(has_tag()) : ?>
 	      <!-- tags -->
 	      <div class = "tagcloud">
 	          <?php
