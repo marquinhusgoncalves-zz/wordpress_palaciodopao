@@ -2,7 +2,8 @@
 
 <div>
 
-	<div class = "container wrap hidden-xs hidden-sm" id = "stickyribbon">
+	<div id = "space-top" class = "hidden-xs"></div>
+	<div class = "container wrap hidden-xs" id = "stickyribbon">
 		<ul class = "menu-padaria">
 			<li role = "presentation"><a href = "#historia">história</a></li>
 			<li role = "presentation"><a href = "#sustentabilidade">sustentabilidade</a></li>
@@ -10,46 +11,26 @@
 		</ul>
 	</div>
 
-	<div class = "hidden-xs hidden-sm"><?php include("menuspace.php") ?></div>
-	
-	<?php //echo do_shortcode("[metaslider id=63]"); ?>
-
 	<!-- HISTÓRIA -->
 	<section>
 		<a id = "anchor-name" name = "historia"></a>
-		<?php include("historia.php"); ?>
+		<div id = "history"><?php include("historia.php"); ?></div>
 	</section>
 
 	<!-- SUSTENTABILIDADE -->
-	<section>
+	<section >
 		<a id = "anchor-name" name = "sustentabilidade"></a>
-		<?php include("sustentabilidade.php"); ?>
+		<div id = "sustainability"><?php include("sustentabilidade.php"); ?></div>
 	</section>
 
 	<!-- PRÊMIOS -->
 	<section>
 		<a id = "anchor-name" name = "premios"></a>
-		<?php include("premios.php"); ?>
+		<div id = "awards"><?php include("premios.php"); ?></div>
 	</section>
 
 </div>
 
 <?php get_footer(); ?>
 
-<script>
-	$(document).ready(function() {
-			var stickyNavTop = $('#stickyribbon').offset().top;
-			var stickyNav = function(){  
-			var scrollTop = $(window).scrollTop();  
-			if (scrollTop > stickyNavTop) {   
-				$('#stickyribbon').addClass('fixed', 'container');  
-				} else {
-					$('#stickyribbon').removeClass('fixed', 'container');   
-				}
-			};
-			stickyNav();
-			$(window).scroll(function() {  
-				stickyNav();  
-			});
-	});
-</script>
+<script src = "<?php bloginfo('stylesheet_directory');?>/js/stick.js"></script>

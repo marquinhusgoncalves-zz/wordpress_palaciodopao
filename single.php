@@ -7,15 +7,42 @@
 
 get_header(); ?>
 
-	<div id = "content" class = "site-content">
-		<div class = "main-content-area">
+	<div class = "col-lg-8 content-post">
 
-		<div id = "primary" class = "content-area">
-		  <main id = "main" class = "site-main" role = "main">
-		    <?php while ( have_posts() ) : the_post(); ?>
-		      <?php get_template_part( 'content', 'single' ); ?>	
-		    <?php endwhile; ?>
-		  </main>
+		<?php
+		// Start the loop.
+		while ( have_posts() ) : the_post();
+
+		get_template_part( 'content', get_post_format() );
+
+		// End the loop.
+		endwhile;
+		?>
+
+		<div class = "hidden-lg pagination-mobile" style = "padding: 0">
+			<?php
+			// Previous/next post navigation.
+			the_post_navigation( array(
+				'prev_text' => __('Anterior: ') . '<span class="post-title">%title</span>',
+				'next_text' => __('Próximo: ') . '<span class="post-title">%title</span>',
+				) );
+				?>
 		</div>
 
-<?php get_footer(); ?>
+	</div>
+
+	<div class = "col-lg-4" style = "padding: 0">
+		<?php get_sidebar(); ?>
+	</div>
+
+	<div class = "col-xs-12 col-lg-8 hidden-xs hidden-sm hidden-md" style = "padding: 0">
+		<?php
+		// Previous/next post navigation.
+		the_post_navigation( array(
+			'prev_text' => __('Próximo: ') . '<span class="post-title">%title</span>',
+			'next_text' => __('Anterior: ') . '<span class="post-title">%title</span>',
+			) );
+			?>
+	</div>
+
+	<?php get_footer(); ?>

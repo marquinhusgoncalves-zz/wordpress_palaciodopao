@@ -1,53 +1,25 @@
 <?php get_header(); ?>
 
-	<div id = "carousel-index" class = "carousel slide" data-ride = "carousel" style = "height: auto">
-	  <!-- Indicators -->
-	  <ol class = "carousel-indicators">
-		<li data-target = "#carousel-index" data-slide-to = "0" class = "active"></li>
-		<li data-target = "#carousel-index" data-slide-to = "1"></li>
-		<li data-target = "#carousel-index" data-slide-to = "2"></li>
-	  </ol>
+	<?php include('carousel-index.php'); ?>
+	<?php include('post-index.php'); ?>
 
-	  <!-- Wrapper for slides -->
-	  <div class = "carousel-inner" role = "listbox">
-		<div class = "item active">
-		  <a href = "../palaciodopao/broaportuguesa/"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/broaportuga.jpg" alt = "Broa Portuguesa"></a>
-		</div>
+	<div class = "clearfix banner-institucional">
+			<img class = "col-xs-12 hidden-xs" src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/institucional.jpg" alt = "fiorino e caixas novas">
+			<img class = "col-xs-12 visible-xs-block" src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/institucional_fiorino.jpg" alt = "fiorinos">
+			<img class = "col-xs-12 visible-xs-block" src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/institucional_caixas.jpg" alt = "caixas">
 
-		<div class = "item">
-		  <img src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/paobaby.jpg" alt = "Pão Baby">
-		</div>
-
-		<div class = "item">
-		  <a href = "../palaciodopao/pizzas/"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/pizza.jpg" alt = "Pizzas"></a>
-		</div>
-
-	  </div>
+			<a href = "<?php get_site_url(); ?>/produtos/sobremesa/">
+				<img class = "col-xs-12" src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/sobremesas.jpg" alt = "sobremesas">
+			</a>
 	</div>
 
-	<div class = "clearfix postagem-index" style = "background-color: #EFEEEA !important; height: auto">
-	<?php
-	if (have_posts()) :
-		  $aRecentPosts = new WP_Query("showposts=2");
-		  while($aRecentPosts->have_posts()) : $aRecentPosts->the_post();
-		?>
-		<div>
-		  <?php
-		  get_template_part( 'content-index', get_post_format()); ?>
+	<div id = "produtos-index">
+		<div id = "pop-produtos">
+			<a href = "<?php get_site_url(); ?>/produtos/"><span>conheça nossos produtos</span></a>
 		</div>
-		  <?php endwhile;
-			else :
-			  echo '';
-			endif;
-		  ?>
+
+		<?php include('produtos-index.php'); ?>
 	</div>
 
-	<img class = "col-xs-12 hidden-xs" src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/banner_site_institucional.jpg" alt = "fiorino e caixas novas" style = "padding: 0">
-	<img class = "col-xs-12 visible-xs-block" src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/banner_site_institucional_fiorino.jpg" alt = "fiorinos" style = "padding: 0">
-	<img class = "col-xs-12 visible-xs-block" src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/banner_site_institucional_caixas.jpg" alt = "caixas" style = "padding: 0">
-
-	<a href = "../palaciodopao/produtos/sobremesa/"><img class = "col-xs-12" src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/sobremesas.jpg" alt = "sobremesas" style = "padding: 0"></a>
-
-	<?php include("produtos.php"); ?>
 
 <?php get_footer(); ?>

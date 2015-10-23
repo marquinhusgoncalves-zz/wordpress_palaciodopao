@@ -1,30 +1,30 @@
 <?php
 /**
- * @package palaciodopao
- */
-
+* @package palaciodopao
+*
+*/
 get_header(); ?>
 
-<div id = "content" class = "site-content">
+<h1 class = "title">arquivo</h1>
 
-  <div class = "main-content-area">
-	<section id = "primary" class = "content-area">
-	  <main class = "site-main" role = "main">
-	  	<?php if ( have_posts() ) : ?>
-	  		<?php /* Start the Loop */ ?>
-	  		<?php while ( have_posts() ) : the_post(); ?>
-	  			<?php
-	  				get_template_part( 'content-dicas', get_post_format() );
-	  			?>
-	  		<?php endwhile; ?>
-	  		
-	  	<?php else : ?>
-	  		<?php get_template_part( 'content', 'none' ); ?>
-	  	<?php endif; ?>
-	  </main>
-	</section>
-  </div>
-</div>
+<section id = "containerScroll" class = "clearfix blog">
+
+	<?php
+
+		if( have_posts() ) :
+		while ( have_posts() ) : the_post();
+
+		get_template_part( 'content-dicas', get_post_format() );
+
+		?>
+
+		<?php endwhile;
+		else :
+			echo '';
+			endif;
+			?>
+
+</section>
 
 <?php get_sidebar(); ?>
 
