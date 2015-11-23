@@ -1,7 +1,5 @@
 <?php get_header(); ?>
-
-<div id = "btn-products"><a href = "#">lista de produtos</a></div>
-<header class = "menulateral clearfix"><?php wp_nav_menu(array('theme_location' => 'products',));?></header>
+<?php include('menu-produtos.php'); ?>
 
 <div class = "marcadagua"><?php include('header_produtos.php') ?></div>
 <div class = "info-pizza"><p>Buffet de Almoço por Kg, todos os dias.</p></div>

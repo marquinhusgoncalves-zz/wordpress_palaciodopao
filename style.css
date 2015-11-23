@@ -343,7 +343,7 @@ p {
 	top: 0;
 }
 .title {
-	background: #BDBBBB;
+	background-color: #337ab7;
 	color: white;
 	padding: 50px;
 	text-transform: uppercase;
@@ -525,48 +525,6 @@ p {
 	margin: 0;
 }
 
-/* M E N U   P R O D U T O S */
-
-.menulateral div ul {
-	list-style: none;
-	display: none;
-	position: relative;
-	margin-bottom: 0;
-	padding: 2% !important;
-	background: white;
-	z-index: 888;
-}
-.menulateral div ul li {
-	padding: 1% 2%;
-}
-.menulateral div a {
-	line-height: 1.7;
-	color: #6B6B6B;
-	word-wrap: break-word;
-}
-.menulateral div a:hover{
-	color: #FD9332;
-}
-#btn-products {
-	width: 100%;
-	height: 60px;
-	text-align: right;
-	padding: 20px 45px 0;
-	background-color: #C8C6BF;
-}
-#btn-products a {
-	font-weight: 800;
-	color: #6B6B6B;
-	text-transform: uppercase;
-}
-#btn-products a:hover,
-#btn-products a:focus {
-	color: #131313;
-	padding-bottom: 16px;
-	border-bottom: 4px solid #131313;
-	text-decoration: none;
-}
-
 /* D I C A S */
 
 .blog article {
@@ -710,8 +668,6 @@ p {
 	margin: 0;
 	border-radius: 0px;
 }
-
-
 /* Hides navigation links and site footer when infinite scroll is active */
 .infinite-scroll #navigation,
 .infinite-scroll.neverending #footer {
@@ -802,6 +758,10 @@ article a {
 }
 .culture > div:last-child {
 	border-bottom: none;
+}
+.cultural-excerpt img {
+	width: 100%;
+	height: auto;
 }
 
 /* C O N T A T O */
@@ -1016,6 +976,12 @@ div.wpcf7-response-output {
 	#header-nav nav ul li {
 		display: block;
 	}
+	.product-list {
+		height: 160px !important;
+	}
+	.product-list a img {
+		width: 30%;
+	}
 	.title {
 		padding: 25px;
 		overflow: hidden;
@@ -1061,5 +1027,8 @@ div.wpcf7-response-output {
 	.next,
 	.nav-next {
 		right: 20px;
+	}
+	.adress {
+		padding-left: 0;
 	}
 }

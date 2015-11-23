@@ -1,0 +1,598 @@
+/* M E N U   P R O D U T O S */
+
+.menulateral div ul {
+	list-style: none;
+	display: none;
+	position: relative;
+	margin-top: 60px;
+	margin-bottom: 0;
+	padding: 2% !important;
+	background: white;
+	z-index: 888;
+}
+.menulateral div ul li {
+	padding: 1% 2%;
+}
+.menulateral div a {
+	line-height: 1.7;
+	color: #6B6B6B;
+	word-wrap: break-word;
+}
+.menulateral div a:hover{
+	color: #FD9332;
+}
+#btn-products {
+	width: 100%;
+	height: 60px;
+	text-align: left;
+	padding-left: 40px;
+	background-color: #C8C6BF;
+	z-index: 890;
+}
+#btn-products i {
+	width: 50px;
+	display: table-cell;
+	vertical-align: middle;
+}
+#btn-products a {
+	font-weight: 800;
+	color: #6B6B6B;
+	text-transform: uppercase;
+	display: table-cell;
+	vertical-align: middle;
+}
+#btn-products a:hover,
+#btn-products a:focus {
+	color: #131313;
+	text-decoration: none;
+}
+#btn-products span {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+#busca {
+	display: none;
+	width: 50%;
+	height: 60px;
+	background-color: whitesmoke;
+	text-align: center;
+	padding-right: 0px;
+	z-index: 890;
+}
+#busca input {
+	margin: 13px 0px;
+}
+#busca .form-busca {
+	width: 75%;
+}
+#busca .btn {
+	width: 60px;
+	height: 60px;
+	margin: 0px;
+	float: right;
+}
+
+/* D E S C R I C A O   P R O D U T O S */
+
+.bg-cardapio {
+	background-color: #EFEEEA;
+}
+.titulo-produto {
+	margin-top: 0;
+}
+.descricao-produto {
+	display: inline-block;
+	font-size: 1em;
+	font-weight: 500;
+}
+.valor-produto {
+	font-size: 0.85em;
+	padding: 10px;
+	font-weight: 400;
+	display: inline-block;
+	color: white;
+	background: tomato;
+	clear: right;
+}
+.cod {
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 0.75em;
+}
+.obs {
+	font-size: 0.7em;
+	line-height: 1.5em;
+	letter-spacing: 0;
+	margin-top: 10px;
+}
+.cabeca {
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: right;
+	margin-bottom: 30px;
+	display: table;
+}
+.cabeca > div {
+	width: 40%;
+	display: table-cell;
+	vertical-align: middle;
+}
+.cabeca h5,
+.cabeca h4,
+.cabeca h3,
+.cabeca p {
+	color: white;
+	display: block;
+	margin: 0;
+}
+.cabeca .unid-jantar {
+	display: inline-block;
+	width: 310px;
+}
+.cabeca .valor-produto {
+	display: inline-block;
+	margin: 5px 0 20px;
+}
+.cabeca .valor-produto:last-child {
+	margin-bottom: 0px;
+}
+.info-rodape {
+	height: auto;
+	padding: 7px 15px 20px 30px;
+	color: white;
+	background: coral;
+	margin-bottom: 40px;
+}
+.info-rodape p {
+	font-size: 0.9em;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	padding: 15px 0 0;
+	margin: 0;
+}
+.marcadagua {
+	width: 100%;
+	height: 150px;
+	background: #789 url("../img/_institucional/marcadagua.png");
+	padding: 0 30px;
+	margin: 0;
+	display: table;
+}
+.marcadagua > div {
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+.marcadagua > div > div {
+	font-size: 30px;
+	display: inline-block;
+}
+.marcadagua h1 {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.marcadagua p {
+	color: white;
+}
+.encomendar {
+	display: inline-block;
+	margin: 10px 20px 0 0;
+}
+
+/* C O M B O S */
+
+.tag {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	font-size: 4em;
+	font-weight: 900;
+	background-color: white;
+	padding: 0px 15px;
+}
+.secao-combos .descricao-produto-combo {
+	font-size: 1.4em;
+	font-weight: 500;
+	display: block;
+	z-index: 10;
+}
+.secao-combos .descricao-produto-combo span {
+	position: absolute;
+	font-size: 2em;
+	font-weight: 900;
+	z-index: 10;
+}
+.secao-combos .cod {
+	display: block;
+}
+.combo-img {
+	width: 100%;
+	position: relative;
+	bottom: 0;
+}
+.combo_01 .descricao-produto-combo,
+#tag_01 {
+	color: #b57d0c;
+}
+.combo_02 .descricao-produto-combo,
+#tag_02 {
+	color: #4581b4;
+}
+.combo_03 .descricao-produto-combo,
+#tag_03 {
+	color: #7f3f56;
+}
+.combo_04 .descricao-produto-combo,
+#tag_04 {
+	color: #6d7c4d;
+}
+.combo_05 .descricao-produto-combo,
+#tag_05 {
+	color: #ad363c;
+}
+.combo_06 .descricao-produto-combo,
+#tag_06 {
+	color: #4e8e52;
+}
+.combo_07 .descricao-produto-combo,
+#tag_07 {
+	color: #3a4f89;
+}
+.combo_08 .descricao-produto-combo,
+#tag_08 {
+	color: #99530e;
+}
+.combo_01 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefbf6+0,eccd9e+100 */
+	background: #fefbf6; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #fefbf6 0%, #eccd9e 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fefbf6), color-stop(100%,#eccd9e)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #fefbf6 0%,#eccd9e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #fefbf6 0%,#eccd9e 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #fefbf6 0%,#eccd9e 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #fefbf6 0%,#eccd9e 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefbf6', endColorstr='#eccd9e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.combo_02 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f9fa+0,a3b2ce+100 */
+	background: #f7f9fa; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #f7f9fa 0%, #a3b2ce 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f7f9fa), color-stop(100%,#a3b2ce)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #f7f9fa 0%,#a3b2ce 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #f7f9fa 0%,#a3b2ce 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #f7f9fa 0%,#a3b2ce 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #f7f9fa 0%,#a3b2ce 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f9fa', endColorstr='#a3b2ce',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.combo_03 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f9fa+0,dab6bc+100 */
+	background: #f5edee; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #f5edee 0%, #dab6bc 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f5edee), color-stop(100%,#dab6bc)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #f5edee 0%,#dab6bc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #f5edee 0%,#dab6bc 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #f5edee 0%,#dab6bc 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #f5edee 0%,#dab6bc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5edee', endColorstr='#dab6bc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.combo_04 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f9fa+0,cbdab6+100 */
+	background: #eef3e9; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #eef3e9 0%, #cbdab6 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#eef3e9), color-stop(100%,#cbdab6)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #eef3e9 0%,#cbdab6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #eef3e9 0%,#cbdab6 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #eef3e9 0%,#cbdab6 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #eef3e9 0%,#cbdab6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef3e9', endColorstr='#cbdab6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.combo_05 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f9fa+0,f4b7b2+100 */
+	background: #f9f3f2; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #f9f3f2 0%, #f4b7b2 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f9f3f2), color-stop(100%,#f4b7b2)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #f9f3f2 0%,#f4b7b2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #f9f3f2 0%,#f4b7b2 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #f9f3f2 0%,#f4b7b2 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #f9f3f2 0%,#f4b7b2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f3f2', endColorstr='#f4b7b2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.combo_06 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/white+0,#eaf1d6+100 */
+	background: white; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  white 0%, #eaf1d6 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,white), color-stop(100%,#eaf1d6)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  white 0%,#eaf1d6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  white 0%,#eaf1d6 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  white 0%,#eaf1d6 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  white 0%,#eaf1d6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='white', endColorstr='#eaf1d6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.combo_07 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4e6f3+0,bdc3e4+100 */
+	background: #e4e6f3; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #e4e6f3 0%, #bdc3e4 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#e4e6f3), color-stop(100%,#bdc3e4)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #e4e6f3 0%,#bdc3e4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #e4e6f3 0%,#bdc3e4 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #e4e6f3 0%,#bdc3e4 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #e4e6f3 0%,#bdc3e4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e6f3', endColorstr='#bdc3e4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.combo_08 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/white+0,BFA978+100 */
+	background: white; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  white 0%, #BFA978 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,white), color-stop(100%,#BFA978)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  white 0%,#BFA978 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  white 0%,#BFA978 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  white 0%,#BFA978 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  white 0%,#BFA978 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='white', endColorstr='#BFA978',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* C A F E   D A   M A N H A */
+
+.cafedamanha > section, .almocoejantar > section {
+	height: auto;
+	padding-top: 30px;
+}
+.cabeca_cafedamanha {
+	background: #789 url("../img/_produtos/cafedamanha/cabeca_cafedamanha.jpg");
+	background-position: right;
+}
+.cafedamanha section > div {
+	margin: 10px 0;
+}
+.cafedamanha .descricao-produto {
+	margin: 0 20px;
+}
+#cafebuffet {
+	right: 0;
+	position: relative;
+}
+#cafecardapio .valor-produto {
+	margin: 5px 30px 0 0px;
+	right: 0;
+	position: absolute;
+}
+
+/* P I Z Z A S */
+
+.secao-pizzas {
+	background-color: #EFEEEA;
+}
+.secao-pizzas section {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.cabeca_pizzas {
+	width: 100%;
+	height: 300px;
+	background: #789 url("../img/_produtos/pizzas/cabeca_pizzas.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.cabeca_box_pizzas {
+	position: absolute;
+}
+.cabeca_text_pizzas {
+    position: relative;
+    top: 40px;
+    left: 600px;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+}
+.bloco-dados {
+	text-align: right;
+	border-left: dashed 1px grey;
+}
+.pizza-dados {
+	display: block;
+}
+.pizza-tamanho {
+	width: 80px;
+	font-size: 1em;
+	display: inline-block;
+	margin: 0;
+}
+.pizza-cod {
+	display: inline-block;
+	margin: 0 10%;
+	font-size: 0.75em;
+}
+.pizza-valor {
+	font-size: 0.75em;
+	padding: 5px;
+	margin-top: 0;
+	font-weight: 400;
+	display: inline-block;
+	color: white;
+	background: tomato;
+}
+
+/*  J A N T A R  */
+
+.cabeca_jantar {
+	background: #789 url("../img/_produtos/jantar/cabeca_jantar.jpg");
+	background-position: right;
+}
+.bloco-jantar {
+	margin-bottom: 40px;
+}
+.bloco-jantar p {
+	display: inline-block;
+}
+.bloco-jantar .valor-produto {
+	margin: 0 10px;
+}
+.unid-jantar {
+	width: 130px;
+}
+
+/*  B O L O S  E  T O R T A S  */
+
+.secao-bolos {
+	background-color: #EFEEEA;
+}
+.secao-bolos section {
+	margin-bottom: 40px;
+	padding-bottom: 30px;
+}
+.cabeca_bolos {
+	width: 100%;
+	height: 300px;
+	background: #789 url("../img/_produtos/bolos/cabeca_bolos.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.cabeca_box_bolos {
+	position: absolute;
+}
+.cabeca_text_bolos {
+    position: relative;
+    left: 600px;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: -50px;
+}
+.cabeca_text2_bolos {
+	margin-left: 21px;
+}
+
+/*  M E D I A   Q U E R I E S  */
+@media (max-width: 1199px) {
+	.cabeca_text_pizzas {
+	    left: 500px;
+	}
+	.cabeca_text_bolos {
+	    left: 480px;
+	}
+}
+@media (max-width: 991px) {
+	.secao-bolos section {
+		border-bottom: dashed 1px grey;
+		margin: 15px;
+	}
+	.secao-bolos section:last-child {
+		border-bottom: none;
+		padding-bottom: 0px;
+	}
+	.cabeca_text_pizzas {
+	    left: 400px;
+	}
+	.cabeca_text_bolos {
+	    left: 370px;
+	}
+}
+@media (max-width: 767px) {
+	.menulateral div ul {
+		margin-top: 0px;
+	}
+	.encomendar {
+		display: block;
+	}
+	.bloco-pizza {
+		padding: 0;
+		border-bottom: dashed 1px grey;
+	}
+	.bloco-pizza:last-child {
+		border-bottom: none;
+	}
+	.bloco-dados {
+		text-align: left;
+		border-left: none;
+	}
+	.img-bolos {
+		/*width: 320px;*/
+		display: block;
+		margin: 0 auto;
+	}
+	#btn-products {
+		width: 100%;
+		display: block;
+		float: none;		
+	}
+	#busca {
+	width: 100%;
+		/*display: block;*/
+	}
+}
+@media (max-width: 610px) {
+	.cabeca_text_pizzas {
+    	left: 330px;
+	}
+	.cabeca_text_bolos {
+	    left: 300px;
+	}
+}
+@media (max-width: 550px) {
+	.cabeca_text_pizzas {
+    	left: 300px;
+	}
+	.cabeca_text_bolos {
+		top: 20px;
+	    left: 270px;
+	    font-size: 60px;
+	}
+}
+@media (max-width: 490px) {
+	.tel {
+		display: block !important;
+	}
+	.ponto {
+		display: none !important;
+	}
+	.cabeca_text_pizzas {
+    	left: 250px;
+    	top: 50px;
+    	font-size: 40px;
+	}
+	.cabeca_text_bolos {
+    	left: 250px;
+    	font-size: 50px;
+    	margin-bottom: -30px;
+	}
+}
+@media (max-width: 400px) {
+	.cabeca_text_pizzas {
+    	left: 205px;
+	}
+	.cabeca_text_bolos {
+	    left: 200px;
+	}
+}
+@media (max-width: 320px) {
+	.cabeca_text_pizzas {
+		top: 50px;
+    	left: 180px;
+    	font-size: 40px;
+	}
+	.cabeca_text_bolos {
+    	left: 175px;
+    	font-size: 40px;
+    	margin-bottom: -20px;
+	}
+	.cabeca_text2_bolos {
+		margin-left: 12px;
+	}
+}
+
+/*  L I X O  */
+
+.cardapio {
+	margin: 0 auto;
+	text-align: center;
+}
+.cardapio img {
+	width: 100%;
+}
+.cardapio > div {
+	margin-bottom: 15px;
+}

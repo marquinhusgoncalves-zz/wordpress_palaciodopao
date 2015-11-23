@@ -1,28 +1,25 @@
 	</div> <!-- #main -->
 
 	<footer id = "footer-site">
-
 		<div class = "footer-info">
-
-			<div class = "adress col-sm-8">
-				<p>Av. Itamarati, 1001 - Pq. Jaçatuba <br /> Santo André - SP <br />
+			<div class = "col-sm-8">
+				<div class = "adress col-md-6">
+					<p>Av. Itamarati, 1001 - Pq. Jaçatuba <br /> Santo André - SP <br />
 					11 <strong>4479 3574</strong> • 11 <strong>4479 3606</strong> <br /></p>
+				</div>
+				<div class = "adress col-md-6">
 					<p>Funcionamento:<br />Segunda a Domingo das 6h às 23h</p>
 				</div>
-
-				<div class = "social col-sm-4">
-					<p>Siga-nos</p>
-
-					<?php wp_nav_menu(array('theme_location' => 'footer',)); ?>
-
-				</div>
 			</div>
-
-			<div class = "site-info">
-				<p class = "col-sm-offset-8 col-sm-4"><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?></p>
+			<div class = "social col-sm-4">
+				<p>Siga-nos</p>
+				<?php wp_nav_menu(array('theme_location' => 'footer',)); ?>
 			</div>
-
-		</footer> 
+		</div>
+		<div class = "site-info">
+			<p class = "col-sm-offset-8 col-sm-4"><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?></p>
+		</div>
+	</footer>
 	
 		<div class = "scroll-to-top"><i class = "fa fa-chevron-up"></i></div> <!-- .scroll-to-top -->
 
