@@ -8,7 +8,7 @@
 					11 <strong>4479 3574</strong> • 11 <strong>4479 3606</strong> <br /></p>
 				</div>
 				<div class = "adress col-md-6">
-					<p>Funcionamento:<br />Segunda a Domingo das 6h às 23h</p>
+					<p>Funcionamento:<br />Dom à Qui: 06h20 às 22h40<br>Sex e Sab: <span style="margin-left: 10px;">06h20 às 23h00</span></p>
 				</div>
 			</div>
 			<div class = "social col-sm-4">

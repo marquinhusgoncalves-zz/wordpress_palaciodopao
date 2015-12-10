@@ -20,7 +20,7 @@
 		</div>
 
 		<div class = "product-list col-xs-6 col-sm-4 col-lg-3" style = "background-color: #DA4453">
-			<a href = "../lanche-metro">
+			<a href = "../lanches-metro">
 				<img src = "<?php bloginfo('stylesheet_directory');?>/img/_icons/icon-lanches-metro.svg" />
 				<p>Lanches de Metro</p>
 			</a>
@@ -40,10 +40,17 @@
 			</a>
 		</div>
 
+		<div class = "product-list col-xs-6 col-sm-4 col-lg-3" style = "background-color: #729592">
+			<a href = "../salgados">
+				<img src = "<?php bloginfo('stylesheet_directory');?>/img/_icons/icon-salgados.svg" />
+				<p>Salgados</p>
+			</a>
+		</div>
+
 		<div class = "product-list col-xs-6 col-sm-4 col-lg-3" style = "background-color: #63506C">
-			<a href = "../doce-salgado">
-				<img src = "<?php bloginfo('stylesheet_directory');?>/img/_icons/icon-doces-salgados.svg" />
-				<p>Doces e Salgados</p>
+			<a href = "../doces">
+				<img src = "<?php bloginfo('stylesheet_directory');?>/img/_icons/icon-doces.svg" />
+				<p>Doces</p>
 			</a>
 		</div>
 
@@ -96,8 +103,15 @@
 			</a>
 		</div>
 
+		<div class = "product-list col-xs-6 col-sm-4 col-lg-3" style = "background-color: #BFA971">
+			<a href = "../sopas">
+				<img src = "<?php bloginfo('stylesheet_directory');?>/img/_icons/icon-sopas.svg" />
+				<p>Sopas</p>
+			</a>
+		</div>
+
 		<div class = "product-list col-xs-6 col-sm-4 col-lg-3" style = "background-color: #99CCFF">
-			<a href = "../bebidas">
+			<a href = "../sucos">
 				<img src = "<?php bloginfo('stylesheet_directory');?>/img/_icons/icon-bebidas.svg" />
 				<p>Sucos</p>
 			</a>

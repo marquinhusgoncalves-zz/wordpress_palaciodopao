@@ -11,7 +11,7 @@
 	<div class = "carousel-inner" role = "listbox">
 
 		<div class = "item active">
-			<a href = "<?php get_site_url(); ?>/broaportuguesa/"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/broaportuga.jpg" alt = "Broa Portuguesa"></a>
+			<img src = "<?php bloginfo('stylesheet_directory');?>/img/_banner/novos-horarios.jpg" alt = "Novos Horários de Funcionamento">
 		</div>
 
 		<div class = "item">

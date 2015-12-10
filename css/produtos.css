@@ -1,5 +1,10 @@
 /* M E N U   P R O D U T O S */
-
+hr {
+	margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 1px dashed #6B6B6B;
+}
 .menulateral div ul {
 	list-style: none;
 	display: none;
@@ -74,7 +79,6 @@
 }
 
 /* D E S C R I C A O   P R O D U T O S */
-
 .bg-cardapio {
 	background-color: #EFEEEA;
 }
@@ -88,7 +92,7 @@
 }
 .valor-produto {
 	font-size: 0.85em;
-	padding: 10px;
+	padding: 5px;
 	font-weight: 400;
 	display: inline-block;
 	color: white;
@@ -100,60 +104,41 @@
 	margin-top: 15px;
 	font-size: 0.75em;
 }
-.obs {
-	font-size: 0.7em;
-	line-height: 1.5em;
-	letter-spacing: 0;
-	margin-top: 10px;
+.cardapio .descricao-produto {
+	margin: 0 20px;
 }
-.cabeca {
-	width: 100%;
-	height: 300px;
-	background-size: cover;
-	background-position: right;
-	margin-bottom: 30px;
-	display: table;
+.cardapio .valor-produto {
+	margin: 5px 15px 0 0px;
+	right: 0;
+	position: absolute;
 }
-.cabeca > div {
-	width: 40%;
-	display: table-cell;
-	vertical-align: middle;
+.cardapio .descricao-ingredientes {
+	font-size: 0.8em;
+    margin-left: 55px;
+    margin-right: 80px;
 }
-.cabeca h5,
-.cabeca h4,
-.cabeca h3,
-.cabeca p {
-	color: white;
-	display: block;
-	margin: 0;
+.cardapio-observacao {
+	font-size: .8em;
 }
-.cabeca .unid-jantar {
-	display: inline-block;
-	width: 310px;
-}
-.cabeca .valor-produto {
-	display: inline-block;
-	margin: 5px 0 20px;
-}
-.cabeca .valor-produto:last-child {
-	margin-bottom: 0px;
+.cardapio-alteracao {
+	margin-bottom: -12px;
 }
 .info-rodape {
 	height: auto;
-	padding: 7px 15px 20px 30px;
+	padding: 0px 15px 5px 30px;
 	color: white;
 	background: coral;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 .info-rodape p {
-	font-size: 0.9em;
+	font-size: 0.7em;
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	padding: 15px 0 0;
+	padding: 7px 0 0;
 	margin: 0;
 }
-.marcadagua {
+/*.marcadagua {
 	width: 100%;
 	height: 150px;
 	background: #789 url("../img/_institucional/marcadagua.png");
@@ -177,14 +162,168 @@
 }
 .marcadagua p {
 	color: white;
-}
+}*/
 .encomendar {
 	display: inline-block;
 	margin: 10px 20px 0 0;
 }
+.cabeca {
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+}
+.cabeca_box {
+	position: absolute;
+}
+
+/* A L M O C O */
+.cabeca_almoco {
+	background: #789 url("../img/_produtos/almoco/cabeca_almoco.jpg");
+	background-position: right;
+}
+.cabeca_text_almoco {
+    position: relative;
+    top: 10px;
+    left: 645px;
+}
+.cabeca_text_almoco h5,
+.cabeca_text_almoco h4,
+.cabeca_text_almoco h3,
+.cabeca_text_almoco p {
+	color: white;
+	margin: 0;
+}
+.cabeca_text_almoco .unid-jantar {
+	width: 215px;
+}
+.cabeca_text_almoco .valor-produto {
+	margin: 5px 0 20px;
+}
+.cabeca_text_almoco .valor-produto:last-child {
+	margin-bottom: 0px;
+}
+.unid-jantar {
+	width: 130px;
+}
+.img-almoco {
+	width: 100%;
+}
+.img-box-almoco {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	margin-bottom: 30px;
+}
+.almoco-quarta {
+	background: #789 url("../img/_produtos/almoco/almoco-quarta.jpg");
+}
+.almoco-quinta {
+	background: #789 url("../img/_produtos/almoco/almoco-quinta.jpg");
+}
+.almoco-sexta {
+	background: #789 url("../img/_produtos/almoco/almoco-sexta.jpg");
+}
+.img-box-text-almoco {
+	position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #fff;
+    top: 50px;
+    left: 100px;
+}
+.img-box-text-almoco p {
+	text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    color: white;
+    margin-top: 40px;
+}
+.img-text-almoco {
+	position: absolute;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    top: 100px;
+}
+.img-text-almoco-quarta {
+    left: 490px;
+}
+.img-text-almoco-quinta {
+    left: 510px;
+}
+.img-text-almoco-sexta {
+    left: 530px;
+}
+
+/*  B O L O S  E  T O R T A S  */
+.cabeca_bolos {
+	background: #789 url("../img/_produtos/bolos/cabeca_bolos.jpg");
+	background-position: center;
+}
+.cabeca_text_bolos {
+    position: relative;
+    top: 30px;
+    left: 600px;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 70px;
+}
+
+/* C A F E   D A   M A N H A */
+.cabeca_cafedamanha {
+	background: #789 url("../img/_produtos/cafedamanha/cabeca_cafedamanha.jpg");
+	background-position: right;
+}
+#cafebuffet {
+	right: 0;
+	position: relative;
+}
+.cabeca_text_cafedamanha {
+    position: relative;
+    top: 60px;
+    left: 670px;
+}
+.cabeca_text_cafedamanha h5,
+.cabeca_text_cafedamanha h4,
+.cabeca_text_cafedamanha h3,
+.cabeca_text_cafedamanha p {
+	color: white;
+	margin: 0;
+}
+.cabeca_text_cafedamanha .unid-jantar {
+	width: 215px;
+}
+.cabeca_text_cafedamanha .valor-produto {
+	margin: 5px 0 20px;
+}
+.cabeca_text_cafedamanha .valor-produto:last-child {
+	margin-bottom: 0px;
+}
+
+/* C E S T A S */
+.cabeca_cestas {
+	background: #789 url("../img/_produtos/cestas/cabeca_cestas.jpg");
+	background-position: center;
+}
+.cabeca_text_cestas {
+    position: relative;
+    top: 20px;
+    left: 610px;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 60px;
+}
+.cabeca_text2_cestas {
+    font-size: 30px;
+    line-height: 30px;
+}
 
 /* C O M B O S */
-
 .tag {
 	position: absolute;
 	top: 30px;
@@ -335,50 +474,95 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='white', endColorstr='#BFA978',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-/* C A F E   D A   M A N H A */
-
-.cafedamanha > section, .almocoejantar > section {
-	height: auto;
-	padding-top: 30px;
+/*  D O C E S  */
+.cabeca_doces {
+	background: #789 url("../img/_produtos/doces/cabeca_doces.jpg");
+	background-position: center;
 }
-.cabeca_cafedamanha {
-	background: #789 url("../img/_produtos/cafedamanha/cabeca_cafedamanha.jpg");
+.cabeca_text_doces {
+    position: relative;
+    top: 10px;
+    left: 560px;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 50px;
+}
+
+/*  J A N T A R  */
+.cabeca_jantar {
+	background: #789 url("../img/_produtos/jantar/cabeca_jantar.jpg");
 	background-position: right;
 }
-.cafedamanha section > div {
-	margin: 10px 0;
+.cabeca_text_jantar {
+    position: relative;
+    top: 20px;
+    left: 640px;
 }
-.cafedamanha .descricao-produto {
-	margin: 0 20px;
+.cabeca_text_jantar h5,
+.cabeca_text_jantar h4,
+.cabeca_text_jantar h3,
+.cabeca_text_jantar p {
+	color: white;
+	margin: 0;
 }
-#cafebuffet {
-	right: 0;
-	position: relative;
+.cabeca_text_jantar .unid-jantar {
+	width: 215px;
 }
-#cafecardapio .valor-produto {
-	margin: 5px 30px 0 0px;
-	right: 0;
-	position: absolute;
+.cabeca_text_jantar .valor-produto {
+	margin: 5px 0 20px;
+}
+.cabeca_text_jantar .valor-produto:last-child {
+	margin-bottom: 0px;
+}
+.bloco-jantar {
+	margin-bottom: 40px;
+}
+.bloco-jantar p {
+	display: inline-block;
+}
+.bloco-jantar .valor-produto {
+	margin: 0 10px;
+}
+.unid-jantar {
+	width: 130px;
+}
+
+/* L A N C H E S */
+.cabeca_lanches {
+	background: #789 url("../img/_produtos/lanches/cabeca_lanches.jpg");
+	background-position: center;
+}
+.cabeca_text_lanches {
+    position: relative;
+    top: 230px;
+    left: 740px;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* L A N C H E S M E T R O */
+.cabeca_lanchesmetro {
+	background: #789 url("../img/_produtos/lanchesmetro/cabeca_lanchesmetro.jpg");
+	background-position: center;
+}
+.cabeca_text_lanchesmetro {
+    position: relative;
+    top: 100px;
+    left: 710px;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 50px;
 }
 
 /* P I Z Z A S */
-
-.secao-pizzas {
-	background-color: #EFEEEA;
-}
-.secao-pizzas section {
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-}
 .cabeca_pizzas {
-	width: 100%;
-	height: 300px;
 	background: #789 url("../img/_produtos/pizzas/cabeca_pizzas.jpg");
-	background-size: cover;
 	background-position: center;
-}
-.cabeca_box_pizzas {
-	position: absolute;
 }
 .cabeca_text_pizzas {
     position: relative;
@@ -416,66 +600,191 @@
 	background: tomato;
 }
 
-/*  J A N T A R  */
-
-.cabeca_jantar {
-	background: #789 url("../img/_produtos/jantar/cabeca_jantar.jpg");
-	background-position: right;
-}
-.bloco-jantar {
-	margin-bottom: 40px;
-}
-.bloco-jantar p {
-	display: inline-block;
-}
-.bloco-jantar .valor-produto {
-	margin: 0 10px;
-}
-.unid-jantar {
-	width: 130px;
-}
-
-/*  B O L O S  E  T O R T A S  */
-
-.secao-bolos {
-	background-color: #EFEEEA;
-}
-.secao-bolos section {
-	margin-bottom: 40px;
-	padding-bottom: 30px;
-}
-.cabeca_bolos {
-	width: 100%;
-	height: 300px;
-	background: #789 url("../img/_produtos/bolos/cabeca_bolos.jpg");
-	background-size: cover;
+/* P R A T O S R Á P I D O S */
+.cabeca_pratos {
+	background: #789 url("../img/_produtos/pratos/cabeca_pratos.jpg");
 	background-position: center;
 }
-.cabeca_box_bolos {
-	position: absolute;
-}
-.cabeca_text_bolos {
+.cabeca_text_pratos {
     position: relative;
+    top: 90px;
     left: 600px;
     color: white;
     font-size: 70px;
     font-weight: 700;
-    margin-bottom: -50px;
+    text-align: right;
+    line-height: 70px;
 }
-.cabeca_text2_bolos {
-	margin-left: 21px;
+
+/* S A L G A D O S  */
+.cabeca_salgados {
+	background: #789 url("../img/_produtos/salgados/cabeca_salgados.jpg");
+	background-position: center;
+}
+.cabeca_text_salgados {
+    position: relative;
+    top: 30px;
+    left: 610px;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 40px;
+}
+.cabeca_text2_salgados {
+	font-size: 40px;
+}
+
+/* S O B R E M E S A S */
+.cabeca_sobremesas {
+	background: #789 url("../img/_produtos/sobremesas/cabeca_sobremesas.jpg");
+	background-position: center;
+}
+.cabeca_text_sobremesas {
+    position: relative;
+    top: 10px;
+    left: 450px;
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: right;
+}
+
+/*S O P A S*/
+.cabeca_sopas {
+	background: #789 url("../img/_produtos/sopas/cabeca_sopas.jpg");
+	background-position: center;
+}
+.cabeca_text_sopas {
+    position: relative;
+    top: 150px;
+    left: 620px;
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: right;
+}
+
+/*  S U C O S  */
+.cabeca_sucos {
+	background: #789 url("../img/_produtos/sucos/cabeca_sucos.jpg");
+	background-position: center;
+}
+.cabeca_text_sucos {
+    position: relative;
+    top: 10px;
+    left: 590px;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: right;
+}
+.descricao-detalhes {
+	font-size: 9px;
+}
+.img-sucos {
+	width: 36px;
+	float: left;
+}
+.cardapio .descricao-ingredientes-sucos {
+    font-size: 0.8em;
+    margin-left: 56px;
+    margin-right: 80px;
+}
+
+/* T A B U A D E F R I O S */
+.cabeca_frios {
+	background: #789 url("../img/_produtos/frios/cabeca_frios.jpg");
+	background-position: center;
+}
+.cabeca_text_frios {
+	position: relative;
+    top: 50px;
+    left: 650px;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 70px;
+}
+
+/*V I N H O S*/
+.cabeca_vinhos {
+	background: #789 url("../img/_produtos/vinhos/cabeca_vinhos.jpg");
+	background-position: center;
+}
+.cabeca_text_vinhos {
+	position: relative;
+    top: 130px;
+    left: 570px;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 70px;
+}
+.cardapio .descricao-ingredientes-vinhos {
+	margin-left: 62px;
 }
 
 /*  M E D I A   Q U E R I E S  */
 @media (max-width: 1199px) {
+	.cabeca_text_almoco {
+    	left: 540px;
+	}
+	.cabeca_text_bolos {
+	    left: 460px;
+	}
+	.cabeca_text_cafedamanha {
+    	left: 560px;
+	}
+	.cabeca_text_cestas {
+    	left: 510px; 
+	}
+	.cabeca_text_doces {
+    	left: 445px;
+	}
+	.cabeca_text_jantar {
+    	left: 530px;
+	}
+	.cabeca_text_lanches {
+	    left: 570px;
+	}
+	.cabeca_text_lanchesmetro {
+	    left: 580px;
+	}
 	.cabeca_text_pizzas {
 	    left: 500px;
 	}
-	.cabeca_text_bolos {
-	    left: 480px;
+	.cabeca_text_pratos {
+		left: 500px;
+	}
+	.cabeca_text_salgados {
+		left: 490px;
+	}
+	.cabeca_text_sobremesas {
+	    left: 310px;
+	}
+	.cabeca_text_sopas {
+    	left: 510px;
+	}
+	.cabeca_text_sucos {
+	    left: 490px;
+	}
+	.cabeca_text_frios {
+    	left: 550px;
+	}
+	.cabeca_text_vinhos {
+	    left: 450px;
 	}
 }
 @media (max-width: 991px) {
+	.cabeca_text_almoco {
+    	left: 390px;
+	}
+	.cabeca_text_bolos {
+	    left: 370px;
+	}
 	.secao-bolos section {
 		border-bottom: dashed 1px grey;
 		margin: 15px;
@@ -484,11 +793,55 @@
 		border-bottom: none;
 		padding-bottom: 0px;
 	}
+	.cabeca_text_cafedamanha {
+    	left: 390px;
+	}
+	.cabeca_text_cestas {
+    	left: 410px; 
+	}
+	.cabeca_text_doces {
+	    left: 360px;
+	    font-size: 45px;
+	    line-height: 40px;
+	}
+	.cabeca_text_jantar {
+    	left: 380px;
+	}
+	.cabeca_text_lanches {
+	    left: 430px;
+	}
+	.cabeca_text_lanchesmetro {
+		top: 50px;
+	    left: 420px;
+	}
 	.cabeca_text_pizzas {
 	    left: 400px;
 	}
-	.cabeca_text_bolos {
-	    left: 370px;
+	.cabeca_text_pratos {
+		left: 390px;
+	}
+	.cabeca_text_salgados {
+		font-size: 45px;
+		left: 380px;
+	}
+	.cabeca_text2_salgados {
+		font-size: 35px;
+	}
+	.cabeca_text_sobremesas {
+	    left: 250px;
+	    font-size: 50px;
+	}
+	.cabeca_text_sopas {
+    	left: 410px;
+	}
+	.cabeca_text_sucos {
+	    left: 390px;
+	}
+	.cabeca_text_frios {
+    	left: 430px;
+	}
+	.cabeca_text_vinhos {
+	    left: 340px;
 	}
 }
 @media (max-width: 767px) {
@@ -510,7 +863,6 @@
 		border-left: none;
 	}
 	.img-bolos {
-		/*width: 320px;*/
 		display: block;
 		margin: 0 auto;
 	}
@@ -520,26 +872,184 @@
 		float: none;		
 	}
 	#busca {
-	width: 100%;
-		/*display: block;*/
+		width: 100%;
+	}
+	.cabeca_text_pratos {
+		left: 420px;
+	    font-size: 60px;
+	}
+}
+@media (max-width: 680px) {
+	.cabeca_text_almoco {
+    	left: 320px;
+	}
+	.img-text-almoco-quarta {
+    	left: 380px;
+	}
+	.img-text-almoco-quinta {
+	    left: 400px;
+	}
+	.img-text-almoco-sexta {
+	    left: 420px;
+	}
+	.cabeca_text_cafedamanha {
+		left: 320px;
+	}
+	.cabeca_text_cestas {
+    	left: 365px;
+	}
+	.cabeca_text_doces {
+	    left: 320px;
+	}
+	.cabeca_text_jantar {
+    	left: 320px;
+	}
+	.cabeca_text_pratos {
+		left: 350px;
+	}
+	.cabeca_text_salgados {
+		left: 350px;
 	}
 }
 @media (max-width: 610px) {
-	.cabeca_text_pizzas {
-    	left: 330px;
+	.cabeca_text_almoco {
+    	left: 260px;
+	}
+	.img-text-almoco {
+		top: 120px;
+    	font-size: 40px;
+	}
+	.img-text-almoco-quarta {
+    	left: 320px;
+	}
+	.img-text-almoco-quinta {
+	    left: 340px;
+	}
+	.img-text-almoco-sexta {
+	    left: 360px;
 	}
 	.cabeca_text_bolos {
 	    left: 300px;
 	}
+	.cabeca_text_cafedamanha {
+		left: 260px;
+	}
+	.cabeca_text_cestas {
+    	left: 330px;
+	}
+	.cabeca_text2_cestas {
+    	font-size: 25px;
+	}
+	.cabeca_text_doces {
+	    left: 300px;
+	    font-size: 40px;
+	    line-height: 35px;
+	}
+	.cabeca_text_jantar {
+    	left: 240px;
+	}
+	.cabeca_text_lanches {
+	    left: 360px;
+	}
+	.cabeca_text_lanchesmetro {
+	    left: 330px;
+	}
+	.cabeca_text_pizzas {
+    	left: 330px;
+	}
+	.cabeca_text_pratos {
+		top: 140px;
+		left: 345px;
+		font-size: 50px;
+		line-height: 50px;
+	}
+	.cabeca_text_salgados {
+		left: 310px;
+	}
+	.cabeca_text_sopas {
+    	left: 340px;
+	}
+	.cabeca_text_sucos {
+    	left: 330px;
+	}
+	.cabeca_text_frios {
+	    left: 320px;
+	}
+	.cabeca_text_vinhos {
+	    left: 230px;
+	}
 }
 @media (max-width: 550px) {
+	.cabeca_text_almoco {
+    	left: 190px;
+	}
+	.cabeca_text_bolos {
+	    left: 270px;
+	    font-size: 60px;
+	}
+	.cabeca_text_cafedamanha {
+    	left: 190px;
+	}
+	.cabeca_text_cestas {
+    	left: 300px;
+    	font-size: 35px;
+	    line-height: 40px;
+	}
+	.cabeca_text2_cestas {
+    	font-size: 25px;
+    	line-height: 30px;
+	}
+	.cabeca_text_doces {
+	    left: 260px;
+	}
+	.cabeca_text_jantar {
+    	left: 180px;
+	}
+	.cabeca_text_lanches {
+	    left: 310px;
+	}
+	.cabeca_text_lanchesmetro {
+		top: 20px;
+		font-size: 40px;
+	    left: 310px;
+	}
 	.cabeca_text_pizzas {
     	left: 300px;
 	}
-	.cabeca_text_bolos {
-		top: 20px;
-	    left: 270px;
-	    font-size: 60px;
+	.cabeca_text_pratos {
+		left: 310px;
+		font-size: 40px;
+		line-height: 38px;
+	}
+	.cabeca_text_salgados {
+		font-size: 40px;
+   		left: 270px;
+	}
+	.cabeca_text2_salgados {
+		font-size: 30px;
+	}
+	.cabeca_text_sobremesas {
+	    left: 200px;
+	    font-size: 40px;
+	}
+	.cabeca_text_sopas {
+		top: 160px;
+    	left: 310px;
+    	font-size: 50px;
+	}
+	.cabeca_text_sucos {
+	    top: 30px;
+	    left: 330px;
+	    font-size: 50px;
+	}
+	.cabeca_text_pizzas {
+    	left: 300px;
+	}
+	.cabeca_text_frios {
+	    top: 65px;
+	    left: 350px;
+	    font-size: 50px;
+	    line-height: 60px;
 	}
 }
 @media (max-width: 490px) {
@@ -549,50 +1059,227 @@
 	.ponto {
 		display: none !important;
 	}
+	.cabeca_text_almoco {
+    	left: 130px;
+	}
+	.img-box-text-almoco {
+		top: 20px;
+	}
+	.img-text-almoco {
+    	top: 220px;
+	}
+	.img-text-almoco-quarta {
+    	left: 125px;
+	}
+	.img-text-almoco-quinta {
+	    left: 137px;
+	}
+	.img-text-almoco-sexta {
+	    left: 143px;
+	}
+	.cabeca_text_bolos {
+    	top: 40px;
+    	left: 230px;
+    	font-size: 50px;
+	}
+	.cabeca_text_cafedamanha {
+    	left: 130px;
+	}
+	.cabeca_text_cestas {
+    	left: 220px;
+    	font-size: 25px;
+    	line-height: 25px
+	}
+	.cabeca_text2_cestas {
+		font-size: 20px;
+		line-height: 17px;
+	}
+	.cabeca_text_doces {
+		left: 245px;
+    	font-size: 30px;
+    	line-height: 30px;
+	}
+	.cabeca_text_jantar {
+    	left: 120px;
+	}
+	.cabeca_text_lanches {
+		top: 240px;
+    	left: 250px;
+    	font-size: 40px;
+	}
+	.cabeca_text_lanchesmetro {
+		font-size: 40px;
+	    left: 230px;
+	}
 	.cabeca_text_pizzas {
     	left: 250px;
     	top: 50px;
     	font-size: 40px;
 	}
-	.cabeca_text_bolos {
-    	left: 250px;
-    	font-size: 50px;
-    	margin-bottom: -30px;
+	.cabeca_text_pratos {
+		top: 140px;
+		left: 245px;
+		font-size: 35px;
+		line-height: 33px;
+	}
+	.cabeca_text_salgados {
+	    left: 215px;
+	}
+	.cabeca_text_sobremesas {
+		top: 20px;
+	    left: 150px;
+	}
+	.cabeca_text_sopas {
+    	left: 280px;
+    	font-size: 40px;
+	}
+	.cabeca_text_sucos {
+    	left: 260px;
+	}
+	.cabeca_text_frios {
+	    left: 280px;
+	}
+	.cabeca_text_vinhos {
+	    left: 190px;
+	    font-size: 50px;
 	}
 }
 @media (max-width: 400px) {
+	.cabeca_text_almoco {
+    	left: 40px;
+	}
+	.cabeca_text_bolos {
+	    left: 180px;
+	}
+	.cabeca_text_cafedamanha {
+    	left: 30px;
+	}
+	.cabeca_text_cestas {
+    	left: 170px;
+	}
+	.cabeca_text_doces {
+		left: 180px;
+	}
+	.cabeca_text_jantar {
+    	left: 40px;
+	}
+	.cabeca_text_lanches {
+	    left: 200px;
+    	font-size: 35px;
+	}
+	.cabeca_text_lanchesmetro {
+		font-size: 35px;
+    	left: 210px;
+    	line-height: 40px;
+	}
 	.cabeca_text_pizzas {
     	left: 205px;
 	}
-	.cabeca_text_bolos {
-	    left: 200px;
+	.cabeca_text_pratos {
+		left: 185px;
+	}
+	.cabeca_text_salgados {
+	    left: 180px;
+	    line-height: 25px;
+	}
+	.cabeca_text_sobremesas {
+	    left: 100px;
+	}
+	.cabeca_text_sopas {
+    	left: 240px;
+	}
+	.cabeca_text_sucos {
+    	left: 220px;
+	}
+	.cabeca_text_frios {
+    	top: 20px;
+    	left: 240px;
+    	font-size: 45px;
+    	line-height: 45px;
+	}
+	.cabeca_text_vinhos {
+	    left: 90px;
+	}
+}
+@media (max-width: 380px) {
+	.cabeca_text_salgados {
+	    left: 160px;
+	}
+	.cabeca_text_lanchesmetro {
+		left: 170px;
+	}
+	.wrap-produtos .cod {
+		display: block;
+	}
+	.wrap-produtos .descricao-produto {
+		margin: 0;
+	}
+	.wrap-produtos .valor-produto {
+		margin-top: 0;
+	}
+	.wrap-produtos .descricao-ingredientes {
+    	margin-left: 0px;
 	}
 }
 @media (max-width: 320px) {
+	.tag {
+    	position: static;
+	}
+	.img-box-text-almoco {
+		left: 60px;
+	}
+	.img-text-almoco-quarta {
+    	left: 87px;
+	}
+	.img-text-almoco-quinta {
+	    left: 95px;
+	}
+	.img-text-almoco-sexta {
+	    left: 103px;
+	}
+	.cabeca_text_bolos {
+    	left: 160px;
+    	font-size: 40px;
+	}
+	.cabeca_text2_bolos {
+		margin-left: 12px;
+	}
+	.cabeca_text_cestas {
+    	left: 145px;
+	}
+	.cabeca_text_doces {
+	    left: 140px;
+	}
+	.cabeca_text_lanches {
+	    left: 170px;
+	}
+	.cabeca_text_lanchesmetro {
+	    left: 150px;
+	}
 	.cabeca_text_pizzas {
 		top: 50px;
     	left: 180px;
     	font-size: 40px;
 	}
-	.cabeca_text_bolos {
-    	left: 175px;
+	.cabeca_text_pratos {
+		left: 155px;
+	}
+	.cabeca_text_salgados {
+	    left: 120px;
+	}
+	.cabeca_text_sobremesas {
+	    left: 60px;
+	}
+	.cabeca_text_sopas {
+    	left: 200px;
+	}
+	.cabeca_text_sucos {
+    	left: 185px;
+    	font-size: 45px;
+	}
+	.cabeca_text_frios {
+		left: 190px;
     	font-size: 40px;
-    	margin-bottom: -20px;
+    	line-height: 40px;
 	}
-	.cabeca_text2_bolos {
-		margin-left: 12px;
-	}
-}
-
-/*  L I X O  */
-
-.cardapio {
-	margin: 0 auto;
-	text-align: center;
-}
-.cardapio img {
-	width: 100%;
-}
-.cardapio > div {
-	margin-bottom: 15px;
 }

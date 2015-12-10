@@ -1,17 +1,14 @@
 <?php get_header(); ?>
 <?php include('menu-produtos.php'); ?>
-
-<div class = "secao-pizzas clearfix">
-	<div class="cabeca_pizzas">
-		<div class="cabeca_box_pizzas">
+<div class = "bg-cardapio clearfix">
+	<div class="cabeca cabeca_pizzas">
+		<div class="cabeca_box">
 			<p class="cabeca_text_pizzas">Pizzas</p>
 		</div>
-	</div>	
-	<div class = "info-rodape">
-		<p>o horário de início da comercialização das pizzas é a partir das 15h</p>
-		<span class = "obs">Todos os preços podem sofrer alteração sem aviso prévio.</span>
 	</div>
-
+	<div class = "info-rodape">
+		<p>* Todos os preços podem sofrer alterações sem aviso prévio. O horário de início da comercialização das pizzas é a partir das 15hs.</p>
+	</div>
 	<div style = "margin: 0 15px">
 		<?php
 		$newsArgs = array( 'post_type' => 'pizza', 'orderby'=> 'title', 'order'	=> 'ASC', 'posts_per_page' => '-1');
@@ -41,12 +38,9 @@
 	<?php endwhile; ?>
 </div>
 </div>
-
 <?php get_footer(); ?>
-
 <script src = "<?php bloginfo('stylesheet_directory');?>/js/menulateral.js"></script>
 <script src = "<?php bloginfo('stylesheet_directory');?>/js/jquery.matchHeight-min.js"></script>
-
 <script>
 	$(function() {
 		$('.bloco-pizza').matchHeight();

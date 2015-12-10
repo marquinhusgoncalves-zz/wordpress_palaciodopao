@@ -22,8 +22,7 @@ body {
 	width: 100%;
 	height: 100%;
 }
-a:focus,
-a:hover {
+a:focus, a:hover {
 	color: #FD9332;
 	text-decoration: none;
 	outline: none;
@@ -96,7 +95,25 @@ p {
 	margin: 10px 2%;
 	z-index: 999;
 }
-#header-nav nav a {
+#header-nav nav a:hover, #header-nav nav a:focus,
+.page-id-5 .current_page_item a,
+.page-id-439 .current_page_item a,
+.page-id-8 .current_page_item a,
+.page-id-12 .current_page_item a,
+.page-id-18 .current_page_item a,
+.page-id-15 .current_page_item a,
+.parent-pageid-8 .menu-item-282 a {
+	color: #FD9332 !important;
+	border-bottom: solid 7px;
+}
+#header-nav nav a,
+.page-id-5 .current_page_item a,
+.page-id-439 .current_page_item a,
+.page-id-8 .current_page_item a,
+.page-id-12 .current_page_item a,
+.page-id-18 .current_page_item a,
+.page-id-15 .current_page_item a,
+.parent-pageid-8 .menu-item-282 a {
 	font-size: 1.1em;
 	font-weight: 900;
 	letter-spacing: 0.05em;
@@ -105,11 +122,6 @@ p {
 	display: inline-block;
 	padding-bottom: 38px;
 	margin: 0 8px;
-}
-#header-nav nav a:hover,
-#header-nav nav a:focus {
-	color: #FD9332;
-	border-bottom: solid 7px;
 }
 #header-nav nav ul {
 	float: right;
@@ -124,9 +136,9 @@ p {
 	transition: all .15s ease;
 	position: fixed;
 	left: 0;
-	top: -500px;
+	top: -110%;
 	width: 100%;
-	height: 470px;
+	height: 100%;
 	padding: 110px 0;
 	background: rgba(29, 22, 17, 0.95);
 	z-index: 900;
@@ -488,20 +500,20 @@ p {
 .marcadagua p {
 	color: white;
 }
-.bg-cardapio {
+/*.bg-cardapio {
 	background-color: #EFEEEA;
 	padding: 15px 0;
-}
-.cardapio {
+}*/
+/*.cardapio {
 	margin: 0 auto;
 	text-align: center;
-}
-.cardapio img {
+}*/
+/*.cardapio img {
 	width: 100%;
 }
 .cardapio > div {
 	margin-bottom: 15px;
-}
+}*/
 .encomendar {
 	margin-top: 10px;
 	margin-bottom: 0;

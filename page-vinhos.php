@@ -1,24 +1,121 @@
 <?php get_header(); ?>
 <?php include('menu-produtos.php'); ?>
-
-<div class = "marcadagua"><?php include('header_produtos.php') ?></div>
-
 <div class = "bg-cardapio">
-	<div class = "clearfix cardapio">
-		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_cardapio/vinhos01.jpg" alt = "vinhos" /></div>
-		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_cardapio/vinhos02.jpg" alt = "vinhos" /></div>
-		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_cardapio/vinhos03.jpg" alt = "vinhos" /></div>
-		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_cardapio/vinhos04.jpg" alt = "vinhos" /></div>
-		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_cardapio/vinhos05.jpg" alt = "vinhos" /></div>
-		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_cardapio/vinhos06.jpg" alt = "vinhos" /></div>
-		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_cardapio/vinhos07.jpg" alt = "vinhos" /></div>
-		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_cardapio/vinhos08.jpg" alt = "vinhos" /></div>
-		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_cardapio/vinhos09.jpg" alt = "vinhos" /></div>
-		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_cardapio/vinhos10.jpg" alt = "vinhos" /></div>
-		<div class = "col-lg-6"><img src = "<?php bloginfo('stylesheet_directory');?>/img/_cardapio/vinhos11.jpg" alt = "vinhos" /></div>
+	<div class="cabeca cabeca_vinhos">
+		<div class="cabeca_box">
+			<p class="cabeca_text_vinhos">Carta de<br>Vinhos</p>
+		</div>
+	</div>
+	<div class = "info-rodape">
+		<p>* Todos os preços podem sofrer alterações sem aviso prévio.</p>
+	</div> 
+	<div class = "clearfix">
+		<h1 class = "col-md-12 col-lg-10 col-lg-offset-1">Espumantes e Frisantes<hr></h1>
+		<section class = "cardapio col-md-6 col-lg-offset-1 col-lg-5">
+			<div class="wrap-produtos"><span class = "cod">108790</span><p class = "descricao-produto">Lambrusco Villa Giada Branco</p><span class = "valor-produto">R$ 31,30</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Itália<br>Uva: Lambrusco<br>Leve, agradável, adocicado. Ideal para entradas, saladas e carnes brancas.</p></div>
+		</section>
+		<section class = "cardapio col-md-6 col-lg-5">
+			<div class="wrap-produtos"><span class = "cod">108789</span><p class = "descricao-produto">Lambrusco Villa Giada Tinto</p><span class = "valor-produto">R$ 31,30</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Itália<br>Uva: Lambrusco<br>Leve, agradável, adocicado. Ideal para entradas com tábuas de embutidos, hamburguer,carnes vermelhas leves e pizzas.</p></div>
+		</section>
+
+		<h1 class = "col-md-12 col-lg-10 col-lg-offset-1">Brancos<hr></h1>
+		<section class = "cardapio col-md-6 col-lg-offset-1 col-lg-5">	
+			<div class="wrap-produtos"><span class = "cod">108064</span><p class = "descricao-produto">Benjamim Nieto Suave e Refrescante</p><span class = "valor-produto">R$ 40,30</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Argentina<br>Uvas: Viníferas Européias<br>Fresco, leve, adocicado, fácil de beber. Ideal para entradas, saladas e pratos leves.</p></div>
+			<div class="wrap-produtos"><span class = "cod">111685</span><p class = "descricao-produto">Olaria Branco</p><span class = "valor-produto">R$ 28,55</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Portugal<br>Uvas: Antão Vaz, Síria, Rabo de Ovelha e Perrum<br>Frutado, fresco, equilibrado, com boa acidez e final fino e persistente.</p></div>
+			<div class="wrap-produtos"><span class = "cod">111676</span><p class = "descricao-produto">Emilia Moscatel de Alejandria</p><span class = "valor-produto">R$ 52,15</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Argentina<br>Uva: Moscatel de Alejandria<br>Floral, leve, adocicado, aromático e agradável. Ideal para entradas e sobremesas.</p></div>
+		</section>
+		<section class = "cardapio col-md-6 col-lg-5">
+			<div class="wrap-produtos"><span class = "cod">110953</span><p class = "descricao-produto">Via Latina</p><span class = "valor-produto">R$ 30,30</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Portugal<br>Vinho verde, elaborado com uvas regionais<br>Boa acidez, fresco. Combina bem com peixes, bacalhau e saladas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">103612</span><p class = "descricao-produto">Frascati San Marco</p><span class = "valor-produto">R$ 48,85</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Itália<br>Uvas: Malvasia di Candia, Trebbiano Toscano, Malvasia Puntinata do Lazio e Bonvino<br>Seco, corpo leve, acidez intensa, equilibrado e muito refrescante. Ideal para aperitivos e entradas, peixes magros, aves, massas leves e risotos de frutos do mar.</p></div>
+			<div class="wrap-produtos"><span class = "cod">103576</span><p class = "descricao-produto">Santa Carolina Reservado Sauvignon Blanc</p><span class = "valor-produto">R$ 34,10</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Chile<br>Uva: Sauvignon Blanc<br>Seco, leve,boa acidez, e final agradável e refrescante. Ideal para massas leves, peixes magros e saladas.</p></div>
+		</section>	
+
+		<h1 class = "col-md-12 col-lg-10 col-lg-offset-1">Tintos<hr></h1>
+		<section class = "cardapio col-md-6 col-lg-offset-1 col-lg-5">
+			<h1>Argentina</h1>
+			<div class="wrap-produtos"><span class = "cod">107985</span><p class = "descricao-produto">Roca Bonarda/Sangiovese</p><span class = "valor-produto">R$ 39,75</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Bonarda / Sangiovese<br>Seco, com taninos finos, boa acidez e equilíbrio, leve e frutado. Uma ótima opção para pizzas e carnes.</p></div>
+			<div class="wrap-produtos"><span class = "cod">103598</span><p class = "descricao-produto">Alfredo Roca Fincas Malbec</p><span class = "valor-produto">R$ 50,70</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Malbec<br>Aroma de frutas vermelhas, redondo, com boa persistência. Ideal para carnes grelhadas, pizzas e massas com molhos equilibrados.</p></div>
+			<div class="wrap-produtos"><span class = "cod">106558</span><p class = "descricao-produto">Alfredo Roca Pinot Noir</p><span class = "valor-produto">R$ 57,00</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Pinot Noir<br>Intenso, leve, agradável com sabor de frutas vermelhas frescas. Ideal para Carnes vermelhas delicadas, pratos e pizzas leves.</p></div>
+			<div class="wrap-produtos"><span class = "cod">103550</span><p class = "descricao-produto">Benjamim Nieto Malbec</p><span class = "valor-produto">R$ 40,30</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva : Malbec<br>Seco, corpo médio, acidez bem equilibrada com final frutado. Ideal para acompanhar carnes vermelhas grelhadas, massas com acompanhamentos de carnes.</p></div>
+			<div class="wrap-produtos"><span class = "cod">110768</span><p class = "descricao-produto">Emilia Malbec/Bonarda</p><span class = "valor-produto">R$ 50,45</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas: Malbec e Bonarda<br>Seco, acidez equilibrada, com taninos finos e final harmônico. Ideal para acompanhar carnes vermelhas, aves, massas com molhos leves, pizzas e queijos meia cura.</p></div>
+			<div class="wrap-produtos"><span class = "cod">105770</span><p class = "descricao-produto">Nieto Senetiner Reserva Syrah</p><span class = "valor-produto">R$ 67,30</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Syrah<br>Corpo médio, boa acidez, taninos de boa qualidade e final equilibrado. Ideal para carnes vermelhas grelhadas, massas com molho de carne, pizzas e queijos.</p></div>
+			<div class="wrap-produtos"><span class = "cod">108020</span><p class = "descricao-produto">Nieto Senetiner Malbec DOC</p><span class = "valor-produto">R$ 88,35</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Malbec<br>Potente, encorpado, com taninos fortes e persistente. Ideal para carnes e massas com molhos estruturados, pizzas fortes e queijos curados.</p></div>
+			<div class="wrap-produtos"><span class = "cod">105769</span><p class = "descricao-produto">Nieto Senetiner Reserva Cabernet Sauvignon</p><span class = "valor-produto">R$ 70,70</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Cabernet Sauvignon<br>Seco, corpo médio, acidez bem equilibrada. Ideal com carnes vermelhas em geral, cordeiro, massas com molhos untuosos, embutidos e pizzas fortes.</p></div>
+			<div class="wrap-produtos"><span class = "cod">105599</span><p class = "descricao-produto">Nieto Senetiner Reserva Malbec</p><span class = "valor-produto">R$ 70,70</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Malbec<br>Seco, encorpado, acidez bem equilibrada. Ideal com carnes vermelhas em geral grelhadas, massas com molhos untuosos, pizzas e queijos duros.</p></div>
+		
+			<h1>Chile</h1>
+			<div class="wrap-produtos"><span class = "cod">071550</span><p class = "descricao-produto">Cefiro Reserva Merlot</p><span class = "valor-produto">R$ 63,85</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Merlot<br>Frutado, corpo médio, redondo,boa acidez e final longo. Ideal com carnes vermelhas aves, massas e pizzas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">108895</span><p class = "descricao-produto">Cefiro Reserva Carmènére</p><span class = "valor-produto">R$ 63,85</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Carmènére<br>Aroma de frutas negras, floral e especiarias. Harmoniza com carnes vermelhas, comidas apimentadas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">108897</span><p class = "descricao-produto">Cefiro Reserva Pinot Noir</p><span class = "valor-produto">R$ 63,85</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Pinot Noir<br>Aroma de frutas vermelhas e notas muito agradáveis de chocolate. Ideal para carnes, massas e pizzas leves e risotos.</p></div>
+			<div class="wrap-produtos"><span class = "cod">103571</span><p class = "descricao-produto">Santa Carolina Reservado Cabernet Sauvignon</p><span class = "valor-produto">R$ 34,10</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Cabernet Sauvignon<br>Leve, fácil de beber, agradável, redondo, macio. Harmoniza com carnes e pizzas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">108389</span><p class = "descricao-produto">Santa Carolina Reserva Carmènére </p><span class = "valor-produto">R$ 64,40</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Carmènére<br>Encorpado, boa acidez, taninos redondos, final longo e intenso. Versátil, acompanha carnes vermelhas, massas e cozinha mediterrânea.</p></div>
+			<div class="wrap-produtos"><span class = "cod">071547</span><p class = "descricao-produto">Santa Carolina Reserva Cabernet Sauvignon</p><span class = "valor-produto">R$ 64,40</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Cabernet Sauvignon<br>Redondo, macio, equilibrado, aromas de frutas vermelhas e baunilha. Ideal para massas, carnes de caça e queijos maturados.</p></div>
+			<div class="wrap-produtos"><span class = "cod">106244</span><p class = "descricao-produto">Santa Carolina Reservado Carmènére</p><span class = "valor-produto">R$ 34,10</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Carmènére<br>Leve, macio, agradável. Ideal para carnes e massa.</p></div>
+			<div class="wrap-produtos"><span class = "cod">110397</span><p class = "descricao-produto">Santa Carolina Reservado Merlot</p><span class = "valor-produto">R$ 34,10</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Merlot<br>Redondo, macio e leve. Ideal para carnes e massas com molhos leves.</p></div>
+			<div class="wrap-produtos"><span class = "cod">103581</span><p class = "descricao-produto">Santa Carolina Estrellas Carmènére</p><span class = "valor-produto">R$ 45,20</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Carmènére<br>Frutado, corpo médio, agradável, taninos finos. Ideal para massas, carnes, pizzas e queijos.</p></div>
+			<div class="wrap-produtos"><span class = "cod">103573</span><p class = "descricao-produto">Santa Carolina Vistana Cabernet/Merlot</p><span class = "valor-produto">R$ 39,25</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas: Cabernet Sauvignon e Merlot<br>Macio, redondo, leve, fácil de beber. Harmoniza com massas e carnes com molhos leves e pizzas.</p></div>
+		</section>
+		<section class = "cardapio col-md-6 col-lg-5">
+			<h1>Espanha</h1>
+			<div class="wrap-produtos"><span class = "cod">103608</span><p class = "descricao-produto">Monastério de San Prudêncio</p><span class = "valor-produto">R$ 42,10</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Tempranillo<br>Seco, boa acidez, corpo médio, meio de boca persistente, com final frutado. Acompanha carnes.</p></div>
+			<div class="wrap-produtos"><span class = "cod">105921</span><p class = "descricao-produto">Pata Negra Oro</p><span class = "valor-produto">R$ 46,10</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Tempranillo<br>Seco, com poucos taninos, corpo leve e bem equilibrado, fácil de beber. Acompanha queijos curados, bacalhau, carnes vermelhas e brancas.</p></div>
+			
+			<h1>França</h1>
+			<div class="wrap-produtos"><span class = "cod">103618</span><p class = "descricao-produto">Abel Pinchard Vin de Table Rouge</p><span class = "valor-produto">R$ 43,50</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas Regionais<br>Simples, leve, fresco e frutado. Ideal para acompanhar carnes brancas e vermelhas leves.</p></div>
+			<div class="wrap-produtos"><span class = "cod">106619</span><p class = "descricao-produto">Abel Pinchard Cotes du Rhône</p><span class = "valor-produto">R$ 56,10</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas: Grenache, Mouvedre, Cinsault e Syrah<br>Muito frutado, seco, fresco e floral. Ideal para carnes vermelhas, aperitivos e queijos.</p></div>
+			<div class="wrap-produtos"><span class = "cod">103617</span><p class = "descricao-produto">Blason Timberlay Bordeaux</p><span class = "valor-produto">R$ 90,60</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas: Cabernet Sauvignon e Merlot<br>Seco, leve, com taninos delicados, equilibrado e fácil de beber. Ideal carnes vermelhas, queijos, tábua de frios e pizzas.</p></div>
+
+			<h1>Itália</h1>
+			<div class="wrap-produtos"><span class = "cod">103625</span><p class = "descricao-produto">Boccantino Monetepulciano D’Abruzzo</p><span class = "valor-produto">R$ 41,50</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Montepulciano<br>Seco, corpo médio, boa acidez, taninos bem estruturados e final harmônico. Ideal com massas leves, carnes grelhadas e pizzas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">103588</span><p class = "descricao-produto">Chianti Bellosguardo</p><span class = "valor-produto">R$ 64,55</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas: Sangiovese, Colorino, Canaiolo Nero, Trebbiano Toscano, Malvasia del Chianti<br>Na boca tem acidez refrescante, corpo leve . Acompanha carnes vermelhas assadas, embutidos, massas leves e pizzas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">071447</span><p class = "descricao-produto">Caldora Montepulciano D’Abruzzo</p><span class = "valor-produto">R$ 58,45</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Montepulciano<br>Seco, encorpado, alta acidez, taninos bem estruturados, final intenso e longo. Acompanha carnes vermelhas, carnes de caça, massas com molhos médios e pizzas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">108899</span><p class = "descricao-produto">Lucarelli Primitivo Puglia</p><span class = "valor-produto">R$ 67,30</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Primitivo<br>Aromas de frutas negras, seco, corpo médio, boa acidez, taninos macios, com final persistente. Ideal com carnes vermelhas, carnes de caça, massas com molhos pesados, pizzas fortes e queijos curados.</p></div>
+			<div class="wrap-produtos"><span class = "cod">103593</span><p class = "descricao-produto">Camigliano Rosso di Montalcino</p><span class = "valor-produto">R$ 141,80</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Sangiovese<br>Aroma de frutas vermelhas frescas, baunilha e chocolate. Ideal para acompanhar carnes brancas e vermelhas com molhos leves, tortas de queijo e pizzas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">103621</span><p class = "descricao-produto">Cornalle Valpolicella</p><span class = "valor-produto">R$ 66,30</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas: Corvina, Rondinella e Molinara<br>Seco, médio corpo, boa acidez, taninos macios e final equilibrado. Ideal para carnes assadas, risotos e massas leves.</p></div>
+
+			<h1>Portugal</h1>
+			<div class="wrap-produtos"><span class = "cod">110863</span><p class = "descricao-produto">Olaria Tinto</p><span class = "valor-produto">R$ 30,00</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas: Aragonez, Castelão e Trincadeira<br>Leve, adocicado, macio e frutado. Perfeito para pizzas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">106283</span><p class = "descricao-produto">Monsaraz Tinto</p><span class = "valor-produto">R$ 47,15</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas: Trincadeira, Aragonês e Castelão<br>Seco, corpo médio, acidez equilibrada, taninos finos e final longo. Ideal com carnes de caça, carnes vermelhas grelhadas ou assadas e queijos curados.</p></div>
+			<div class="wrap-produtos"><span class = "cod">111850</span><p class = "descricao-produto">Reguengos Tinto</p><span class = "valor-produto">R$ 35,00</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas: Alicante Bouschet, Trincadeira, Aragonês, Castelão, Moreto, Cabernet Sauvignon e Tinta Caiada.<br>Seco, floral corpo médio, boa acidez, taninos finos e final longo. Ideal para carnes, pizzas, embutidos e queijos.</p></div>
+			<div class="wrap-produtos"><span class = "cod">106190</span><p class = "descricao-produto">Terras De Xisto</p><span class = "valor-produto">R$ 42,10</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas: Castelão, Aragonês, Moreto e Trincadeira<br>Seco, frutado, corpo médio, boa acidez e taninos macios. Ideal para acompanhar carnes e queijos.</p></div>
+			<div class="wrap-produtos"><span class = "cod">103575</span><p class = "descricao-produto">Messias Tinto</p><span class = "valor-produto">R$ 34,55</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas: Baga, Alfrocheiro e Tinta Roriz<br>Corpo médio, seco, taninos bem estruturados e final macio. Ideal para acompanhar carnes vermelhas, massas e pizzas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">107951</span><p class = "descricao-produto">Duorum Douro</p><span class = "valor-produto">R$ 96,60</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uvas: Touriga Nacional, Touriga Franca e Tinta Roriz.<br>Seco, encorpado, com acidez equilibrada, taninos macios e final harmonioso. Ideal para massas e carnes com molhos estruturados, pizzas com recheios fortes.</p></div>
+			<div class="wrap-produtos"><span class = "cod">106605</span><p class = "descricao-produto">Quinta do Cachão</p><span class = "valor-produto">R$ 47,40</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Uva: Tinta Barroca<br>Encorpado, taninos estruturados, boa acidez. Ideal para acompanhar carnes vermelhas, carnes de caça e queijos curados.</p></div>
+		</section>
+
+		<h1 class = "col-md-12 col-lg-10 col-lg-offset-1">Meia Garrafas<hr></h1>
+		<!-- <h1 class = "col-md-12 col-lg-10 col-lg-offset-1">Branco e Tinto<hr></h1> -->
+		<section class = "cardapio col-md-6 col-lg-offset-1 col-lg-5">	
+			<div class="wrap-produtos"><span class = "cod">104331</span><p class = "descricao-produto">Alfredo Roca Fincas Malbec Tinto</p><span class = "valor-produto">R$ 38,45</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Argentina<br>Aroma de frutas vermelhas, redondo, com boa persistência. Ideal para carnes grelhadas, pizzas e massas com molhos equilibrados.</p></div>
+			<div class="wrap-produtos"><span class = "cod">104332</span><p class = "descricao-produto">Alfredo Roca Fincas<br>Cabernet Sauvignon Tinto</p><span class = "valor-produto">R$ 38,45</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Argentina<br>Uva: Cabernet Sauvignom<br>Médio corpo, frutado, boa acidez, redondo. Ideal para massas e carnes com molhos equilibrados, pizzas e queijos.</p></div>
+			<div class="wrap-produtos"><span class = "cod">104329</span><p class = "descricao-produto">Santa Carolina Reservado<br>Cabernet Sauvignon Tinto</p><span class = "valor-produto">R$ 21,20</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Chile<br>Uva: Cabernet Sauvignon<br>Leve, fácil de beber, agradável, redondo, macio. Harmoniza com carnes e pizzas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">071371</span><p class = "descricao-produto">Santa Carolina Vistaña<br>Cabernet / Merlot Tinto</p><span class = "valor-produto">R$ 23,55</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Chile<br>Uvas: Cabernet Sauvignon e Merlot<br>Macio, redondo, leve, fácil de beber. Harmoniza com massas e carnes com molhos leves e pizzas.</p></div>
+		</section>
+		<section class = "cardapio col-md-6 col-lg-5">
+			<div class="wrap-produtos"><span class = "cod">106282</span><p class = "descricao-produto">Chianti Bellosguardo Tinto</p><span class = "valor-produto">R$ 41,70</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Itália<br>Uvas: Sangiovese, Colorino, Canaiolo Nero, Trebbiano Toscano, Malvasia del Chianti<br>Na boca tem acidez refrescante, corpo leve. Acompanha carnes vermelhas assadas, embutidos, massas leves e pizzas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">108079</span><p class = "descricao-produto">Santa Carolina Sauvignon / Blanc</p><span class = "valor-produto">R$ 21,10</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Chile<br>Uvas: Sauvignon Blanc<br>Seco, leve, boa acidez, com final agradável e refrescante. Ideal para massas leves, peixes magros e saladas.</p></div>
+			<div class="wrap-produtos"><span class = "cod">106340</span><p class = "descricao-produto">Terras de Xisto</p><span class = "valor-produto">R$ 23,85</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Portugal<br>Uva: Castelão, Aragones, Moreto e Trincadeira<br>Seco, frutado, corpo médio, boa acidez e taninos macios. Ideal para acompanhar carnes e queijos.</p></div>
+			<div class="wrap-produtos"><span class = "cod">111337</span><p class = "descricao-produto">Via Latina Branco - 250 ml</p><span class = "valor-produto">R$ 15,55</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Portugal<br>Vinho Verde;elaborado com uvas regionais<br>Boa acidez e fresco. Combinabem com peixes, bacalhau e saladas.</p></div>
+		</section>
+
+		<h1 class = "col-md-12 col-lg-10 col-lg-offset-1">Garrafas 187,5 ML<hr></h1>
+		<section class = "cardapio col-md-6 col-lg-offset-1 col-lg-5">
+			<div class="wrap-produtos"><span class = "cod">108743</span><p class = "descricao-produto">Santa Carolina Vistaña<br>Sauvignon Blanc / Semillon</p><span class = "valor-produto">R$ 18,45</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Chile<br>Uva: Sauvignon Blanc e Semillon<br>Leve, floral, agradável. Ideal para pratos leves, peixes e massas com frutos do mar.</p></div>
+			<div class="wrap-produtos"><span class = "cod">108004</span><p class = "descricao-produto">Santa Carolina Vistaña<br>Cabernet / Merlot</p><span class = "valor-produto">R$ 18,45</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Chile<br>Uvas: Cabernet Sauvignon e Merlot<br>Macio, redondo, leve, fácil de beber. Harmoniza com massas e carnes com molhos leves e pizzas.</p></div>
+		</section>
+		<section class = "cardapio col-md-6 col-lg-5">
+			<div class="wrap-produtos"><span class = "cod">111765</span><p class = "descricao-produto">Santa Carolina Merlot</p><span class = "valor-produto">R$ 15,95</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Chile<br>Uva: Merlot<br>Redondo, macio, aveludado. Ideal para carnes e massas com molhos leves.</p></div>
+			<div class="wrap-produtos"><span class = "cod">111444</span><p class = "descricao-produto">Nederburg Sauvignon Blanc / Chardonay</p><span class = "valor-produto">R$ 19,20</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: África do Sul<br>Uva: Sauvignon Blanc Chardonay<br>Frutoso, citrico, acidez equilibrada. Ideal para entradas, saladas, peixes e massas com pescados.</p></div>
+		</section>	
+			
+		<h1 class = "col-md-12 col-lg-10 col-lg-offset-1">Vinho em Taça<hr></h1>
+		<section class = "cardapio col-md-6 col-lg-offset-1 col-lg-5">
+			<div class="wrap-produtos"><span class = "cod">104371</span><p class = "descricao-produto">San Martin Tinto Seco</p><span class = "valor-produto">R$ 5,40</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Brasil<br>Seco, macio e redondo. Acompanha carnes e pizzas.</p></div>
+		</section>
+		<section class = "cardapio col-md-6 col-lg-5">
+			<div class="wrap-produtos"><span class = "cod">104366</span><p class = "descricao-produto">San Martin Tinto Suave</p><span class = "valor-produto">R$ 5,40</span><hr><p class="descricao-ingredientes descricao-ingredientes-vinhos">Origem: Brasil<br>Adocicado, agradável e frutado. Ideal para carnes e pizzas.</p></div>
+		</section>
 	</div>
 </div>
-
 <?php get_footer(); ?>
-
 <script src = "<?php bloginfo('stylesheet_directory');?>/js/menulateral.js"></script>
